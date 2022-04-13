@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hygge.vblog.mapper.VArticleMapper">
+
+    <resultMap id="BaseResultMap" type="com.hygge.vblog.domain.VArticle">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="description" column="description" jdbcType="VARCHAR"/>
+            <result property="context" column="context" jdbcType="VARCHAR"/>
+            <result property="numberView" column="number_view" jdbcType="INTEGER"/>
+            <result property="userId" column="user_id" jdbcType="INTEGER"/>
+            <result property="categorysId" column="categorys_id" jdbcType="INTEGER"/>
+            <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,title,description,
+        context,number_view,user_id,
+        categorys_id,created_date, status
+    </sql>
+
+    <insert id="insertFanId" parameterType="com.hygge.vblog.domain.VArticle" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO v_article (title, description, context, user_id, categorys_id, created_date, `status`)
+        VALUES ( #{title}, #{description}, #{context}, #{userId}, #{categorysId}, #{createdDate}, #{status});
+
+    </insert>
+
+    <resultMap id="BlogsDtoMap" type="com.hygge.vblog.common.dto.BlogsDto">
+        <id property="id" column="id" javaType="INTEGER"/>
+        <result property="title" column="title" jdbcType="VARCHAR"/>
+        <result property="description" column="description" jdbcType="VARCHAR"/>
+        <result property="context" column="context" jdbcType="VARCHAR"/>
+        <result property="category" column="category" jdbcType="VARCHAR"/>
+        <result property="categoryId" column="categoryId" jdbcType="INTEGER"/>
+        <result property="numberView" column="number_view" jdbcType="INTEGER"/>
+        <result property="createdDate" column="created_date" jdbcType="TIMESTAMP"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <select id="selectAll" resultMap="BlogsDtoMap">
+        SELECT a.id, a.title, a.description, a.context, c.id as categoryId, c.`name` as category,
+               a.number_view, a.created_date, a.`status` FROM v_article as a
+               LEFT JOIN v_categorys c ON a.categorys_id=c.id
+        order by created_date desc limit #{current},#{pageSize}
+
+    </select>
+    <select id="selectAllFlag" resultMap="BlogsDtoMap">
+        SELECT a.id, a.title, a.description, a.context, c.id as categoryId, c.`name` as category,
+               a.number_view, a.created_date, a.`status` FROM v_article as a
+                LEFT JOIN v_categorys c ON a.categorys_id=c.id
+        where a.status=#{flag}
+        order by created_date desc limit #{current},#{pageSize}
+
+    </select>
+</mapper>

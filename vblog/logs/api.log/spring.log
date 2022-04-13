@@ -1,0 +1,1367 @@
+2022-04-12 21:07:53.080  INFO 13808 --- [main] com.hygge.vblog.VblogApplication         : Starting VblogApplication on 不染 with PID 13808 (E:\zeng\study\javaProject\vblog\vblog\target\classes started by hygge in E:\zeng\study\javaProject\vblog\vblog)
+2022-04-12 21:07:53.095  INFO 13808 --- [main] com.hygge.vblog.VblogApplication         : No active profile set, falling back to default profiles: default
+2022-04-12 21:07:55.814  INFO 13808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-12 21:07:55.818  INFO 13808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-12 21:07:55.871  INFO 13808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2022-04-12 21:07:56.296  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$2beadb51] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:56.379  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration$$EnhancerBySpringCGLIB$$2e7e19f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:56.412  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jwtUtil' of type [com.hygge.vblog.common.util.JwtUtil] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:56.861  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:56.868  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatisPlusConfig' of type [com.hygge.vblog.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$675e2da6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:56.909  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatisPlusInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:56.923  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:56.925  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:56.937  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:57.039  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:57.049  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:58.264  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:58.274  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:58.276  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'VUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:58.279  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'VUserMapper' of type [com.sun.proxy.$Proxy65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:58.298  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.mail.MailSenderPropertiesConfiguration' of type [org.springframework.boot.autoconfigure.mail.MailSenderPropertiesConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:58.302  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.mail-org.springframework.boot.autoconfigure.mail.MailProperties' of type [org.springframework.boot.autoconfigure.mail.MailProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:58.353  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mailSender' of type [org.springframework.mail.javamail.JavaMailSenderImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:58.354  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mailUtil' of type [com.hygge.vblog.common.util.MailUtil] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:58.359  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.hygge.vblog.config.RedisConfig$$EnhancerBySpringCGLIB$$836f3b14] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:58.372  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:58.374  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:58.625  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:58.919  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.048  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.049  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisUtil' of type [com.hygge.vblog.common.util.RedisUtil] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.050  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'VUserServiceImpl' of type [com.hygge.vblog.service.impl.VUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.050  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'accountRealm' of type [com.hygge.vblog.shiro.AccountRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.056  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiro-redis.redis-manager-org.crazycake.shiro.RedisManagerProperties' of type [org.crazycake.shiro.RedisManagerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.058  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiro-redis.cache-manager-org.crazycake.shiro.CacheManagerProperties' of type [org.crazycake.shiro.CacheManagerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.060  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiro-redis.session-dao-org.crazycake.shiro.RedisSessionDAOProperties' of type [org.crazycake.shiro.RedisSessionDAOProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.063  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.crazycake.shiro.ShiroRedisAutoConfiguration' of type [org.crazycake.shiro.ShiroRedisAutoConfiguration$$EnhancerBySpringCGLIB$$28a543b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.101  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.104  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisCacheManager' of type [org.crazycake.shiro.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.110  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.123  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.623  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.636  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.711  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jwtFilter' of type [com.hygge.vblog.shiro.JwtFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.750  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.hygge.vblog.config.ShiroConfig$$EnhancerBySpringCGLIB$$38a0b3ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.753  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroFilterChainDefinition' of type [org.apache.shiro.spring.web.config.DefaultShiroFilterChainDefinition] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:07:59.769  INFO 13808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:08:00.304  INFO 13808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2022-04-12 21:08:00.324  INFO 13808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-12 21:08:00.325  INFO 13808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-04-12 21:08:00.822  INFO 13808 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-12 21:08:00.822  INFO 13808 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7539 ms
+2022-04-12 21:08:01.547  INFO 13808 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-12 21:08:02.476  INFO 13808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2022-04-12 21:08:02.491  INFO 13808 --- [main] com.hygge.vblog.VblogApplication         : Started VblogApplication in 10.594 seconds (JVM running for 20.847)
+2022-04-12 21:29:40.004  INFO 13808 --- [http-nio-8181-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 21:29:40.004  INFO 13808 --- [http-nio-8181-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-12 21:29:40.024  INFO 13808 --- [http-nio-8181-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2022-04-12 21:29:40.156  INFO 13808 --- [http-nio-8181-exec-3] a.s.s.m.AbstractValidatingSessionManager : Enabling session validation scheduler...
+2022-04-12 21:29:40.543  INFO 13808 --- [http-nio-8181-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-12 21:29:43.888  INFO 13808 --- [http-nio-8181-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-12 21:29:43.915 DEBUG 13808 --- [http-nio-8181-exec-3] c.h.v.m.VCategorysMapper.selectList      : ==>  Preparing: SELECT id,name FROM v_categorys ORDER BY id DESC
+2022-04-12 21:29:43.972 DEBUG 13808 --- [http-nio-8181-exec-3] c.h.v.m.VCategorysMapper.selectList      : ==> Parameters: 
+2022-04-12 21:29:44.073 DEBUG 13808 --- [http-nio-8181-exec-3] c.h.v.m.VCategorysMapper.selectList      : <==      Total: 4
+2022-04-12 21:29:44.194 DEBUG 13808 --- [http-nio-8181-exec-1] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:29:44.197 DEBUG 13808 --- [http-nio-8181-exec-1] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:29:44.238 DEBUG 13808 --- [http-nio-8181-exec-1] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:29:44.586 DEBUG 13808 --- [http-nio-8181-exec-5] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:29:44.587 DEBUG 13808 --- [http-nio-8181-exec-5] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:29:44.620 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.VCategorysMapper.selectList      : ==>  Preparing: SELECT id,name FROM v_categorys ORDER BY id DESC
+2022-04-12 21:29:44.621 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.VCategorysMapper.selectList      : ==> Parameters: 
+2022-04-12 21:29:44.626 DEBUG 13808 --- [http-nio-8181-exec-5] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:29:44.664 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.VCategorysMapper.selectList      : <==      Total: 4
+2022-04-12 21:29:46.591 DEBUG 13808 --- [http-nio-8181-exec-5] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:29:46.592 DEBUG 13808 --- [http-nio-8181-exec-5] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:29:46.636 DEBUG 13808 --- [http-nio-8181-exec-5] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:29:52.914 ERROR 13808 --- [http-nio-8181-exec-2] c.h.v.c.e.GlobalExceptionHandler         : 运行时异常：------{}
+
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1534) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1442) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1228) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1211) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:975) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:360) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:134) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:97) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:84) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:215) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:53) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at com.hygge.vblog.common.util.RedisUtil.get(RedisUtil.java:91) ~[classes/:na]
+	at com.hygge.vblog.controller.IndexController.getAllPage(IndexController.java:102) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_111]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_111]
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1440) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	... 84 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:242) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:206) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_111]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:211) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:201) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:58) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	... 85 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /101.35.253.129:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261) ~[netty-transport-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:164) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500) ~[netty-transport-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	... 1 common frames omitted
+
+2022-04-12 21:29:56.890 DEBUG 13808 --- [http-nio-8181-exec-9] c.h.v.m.VCategorysMapper.selectList      : ==>  Preparing: SELECT id,name FROM v_categorys ORDER BY id DESC
+2022-04-12 21:29:56.892 DEBUG 13808 --- [http-nio-8181-exec-9] c.h.v.m.VCategorysMapper.selectList      : ==> Parameters: 
+2022-04-12 21:29:56.912 DEBUG 13808 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:29:56.912 DEBUG 13808 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:29:56.936 DEBUG 13808 --- [http-nio-8181-exec-9] c.h.v.m.VCategorysMapper.selectList      : <==      Total: 4
+2022-04-12 21:29:56.949 DEBUG 13808 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:29:57.269 DEBUG 13808 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:29:57.270 DEBUG 13808 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:29:57.311 DEBUG 13808 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:30:02.926 ERROR 13808 --- [http-nio-8181-exec-4] c.h.v.c.e.GlobalExceptionHandler         : 运行时异常：------{}
+
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1534) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1442) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1228) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1211) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:975) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:360) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:134) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:97) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:84) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:215) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:53) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at com.hygge.vblog.common.util.RedisUtil.get(RedisUtil.java:91) ~[classes/:na]
+	at com.hygge.vblog.controller.IndexController.getAllPage(IndexController.java:102) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_111]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_111]
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1440) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	... 84 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:242) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:206) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_111]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:211) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:201) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:58) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	... 85 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /101.35.253.129:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261) ~[netty-transport-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:164) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500) ~[netty-transport-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	... 1 common frames omitted
+
+2022-04-12 21:30:12.932 ERROR 13808 --- [http-nio-8181-exec-3] c.h.v.c.e.GlobalExceptionHandler         : 运行时异常：------{}
+
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1534) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1442) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1228) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1211) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:975) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:360) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:134) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:97) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:84) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:215) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:53) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at com.hygge.vblog.common.util.RedisUtil.get(RedisUtil.java:91) ~[classes/:na]
+	at com.hygge.vblog.controller.IndexController.getAllPage(IndexController.java:102) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_111]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_111]
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1440) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	... 84 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:242) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:206) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_111]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:211) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:201) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:58) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	... 85 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /101.35.253.129:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261) ~[netty-transport-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:164) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500) ~[netty-transport-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	... 1 common frames omitted
+
+2022-04-12 21:30:23.431 DEBUG 13808 --- [http-nio-8181-exec-1] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user WHERE (user_name = ? OR email = ?)
+2022-04-12 21:30:23.432 DEBUG 13808 --- [http-nio-8181-exec-1] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: hygge(String), hygge(String)
+2022-04-12 21:30:23.472 DEBUG 13808 --- [http-nio-8181-exec-1] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:30:25.697 DEBUG 13808 --- [http-nio-8181-exec-2] c.h.vblog.mapper.VUserMapper.selectById  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user WHERE id=?
+2022-04-12 21:30:25.698 DEBUG 13808 --- [http-nio-8181-exec-2] c.h.vblog.mapper.VUserMapper.selectById  : ==> Parameters: 1(Integer)
+2022-04-12 21:30:25.737 DEBUG 13808 --- [http-nio-8181-exec-2] c.h.vblog.mapper.VUserMapper.selectById  : <==      Total: 1
+2022-04-12 21:30:27.888 ERROR 13808 --- [http-nio-8181-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool] with root cause
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_111]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_111]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_111]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_111]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_111]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_111]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_111]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_111]
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:53) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.Connection.connect(Connection.java:158) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:109) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1904) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:130) ~[jedis-3.3.0.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:288) ~[jedis-3.3.0.jar:na]
+	at org.crazycake.shiro.RedisManager.getJedis(RedisManager.java:38) ~[shiro-redis-3.3.1.jar:na]
+	at org.crazycake.shiro.common.WorkAloneRedisManager.set(WorkAloneRedisManager.java:72) ~[shiro-redis-3.3.1.jar:na]
+	at org.crazycake.shiro.RedisSessionDAO.saveSession(RedisSessionDAO.java:103) ~[shiro-redis-3.3.1.jar:na]
+	at org.crazycake.shiro.RedisSessionDAO.doCreate(RedisSessionDAO.java:174) ~[shiro-redis-3.3.1.jar:na]
+	at org.apache.shiro.session.mgt.eis.AbstractSessionDAO.create(AbstractSessionDAO.java:116) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.session.mgt.DefaultSessionManager.create(DefaultSessionManager.java:177) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.session.mgt.DefaultSessionManager.doCreateSession(DefaultSessionManager.java:158) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.session.mgt.AbstractValidatingSessionManager.createSession(AbstractValidatingSessionManager.java:136) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.start(AbstractNativeSessionManager.java:99) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.SessionsSecurityManager.start(SessionsSecurityManager.java:152) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.getSession(DelegatingSubject.java:340) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.getSession(DelegatingSubject.java:316) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSubjectDAO.mergePrincipals(DefaultSubjectDAO.java:207) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSubjectDAO.saveToSession(DefaultSubjectDAO.java:165) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSubjectDAO.save(DefaultSubjectDAO.java:146) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSecurityManager.save(DefaultSecurityManager.java:388) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSecurityManager.createSubject(DefaultSecurityManager.java:355) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSecurityManager.createSubject(DefaultSecurityManager.java:188) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:288) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.filter.authc.AuthenticatingFilter.executeLogin(AuthenticatingFilter.java:53) ~[shiro-web-1.6.0.jar:1.6.0]
+	at com.hygge.vblog.shiro.JwtFilter.onAccessDenied(JwtFilter.java:74) ~[classes/:na]
+	at org.apache.shiro.web.filter.AccessControlFilter.onAccessDenied(AccessControlFilter.java:133) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:214) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:189) ~[shiro-web-1.6.0.jar:1.6.0]
+	at com.hygge.vblog.shiro.JwtFilter.preHandle(JwtFilter.java:121) ~[classes/:na]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_111]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_111]
+
+2022-04-12 21:30:27.944 DEBUG 13808 --- [http-nio-8181-exec-2] c.h.vblog.mapper.VUserMapper.selectById  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user WHERE id=?
+2022-04-12 21:30:27.945 DEBUG 13808 --- [http-nio-8181-exec-2] c.h.vblog.mapper.VUserMapper.selectById  : ==> Parameters: 1(Integer)
+2022-04-12 21:30:27.990 DEBUG 13808 --- [http-nio-8181-exec-2] c.h.vblog.mapper.VUserMapper.selectById  : <==      Total: 1
+2022-04-12 21:30:30.006 ERROR 13808 --- [http-nio-8181-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_111]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_111]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_111]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_111]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_111]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_111]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_111]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_111]
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:53) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.Connection.connect(Connection.java:158) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:109) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1904) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:130) ~[jedis-3.3.0.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:288) ~[jedis-3.3.0.jar:na]
+	at org.crazycake.shiro.RedisManager.getJedis(RedisManager.java:38) ~[shiro-redis-3.3.1.jar:na]
+	at org.crazycake.shiro.common.WorkAloneRedisManager.set(WorkAloneRedisManager.java:72) ~[shiro-redis-3.3.1.jar:na]
+	at org.crazycake.shiro.RedisSessionDAO.saveSession(RedisSessionDAO.java:103) ~[shiro-redis-3.3.1.jar:na]
+	at org.crazycake.shiro.RedisSessionDAO.doCreate(RedisSessionDAO.java:174) ~[shiro-redis-3.3.1.jar:na]
+	at org.apache.shiro.session.mgt.eis.AbstractSessionDAO.create(AbstractSessionDAO.java:116) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.session.mgt.DefaultSessionManager.create(DefaultSessionManager.java:177) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.session.mgt.DefaultSessionManager.doCreateSession(DefaultSessionManager.java:158) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.session.mgt.AbstractValidatingSessionManager.createSession(AbstractValidatingSessionManager.java:136) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.start(AbstractNativeSessionManager.java:99) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.SessionsSecurityManager.start(SessionsSecurityManager.java:152) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.getSession(DelegatingSubject.java:340) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.getSession(DelegatingSubject.java:316) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSubjectDAO.mergePrincipals(DefaultSubjectDAO.java:207) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSubjectDAO.saveToSession(DefaultSubjectDAO.java:165) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSubjectDAO.save(DefaultSubjectDAO.java:146) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSecurityManager.save(DefaultSecurityManager.java:388) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSecurityManager.createSubject(DefaultSecurityManager.java:355) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSecurityManager.createSubject(DefaultSecurityManager.java:188) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:288) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.filter.authc.AuthenticatingFilter.executeLogin(AuthenticatingFilter.java:53) ~[shiro-web-1.6.0.jar:1.6.0]
+	at com.hygge.vblog.shiro.JwtFilter.onAccessDenied(JwtFilter.java:74) ~[classes/:na]
+	at org.apache.shiro.web.filter.AccessControlFilter.onAccessDenied(AccessControlFilter.java:133) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:214) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:189) ~[shiro-web-1.6.0.jar:1.6.0]
+	at com.hygge.vblog.shiro.JwtFilter.preHandle(JwtFilter.java:121) ~[classes/:na]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_111]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_111]
+
+2022-04-12 21:30:30.008 ERROR 13808 --- [http-nio-8181-exec-2] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+javax.servlet.ServletException: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.apache.shiro.web.servlet.AdviceFilter.cleanup(AdviceFilter.java:196) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.filter.authc.AuthenticatingFilter.cleanup(AuthenticatingFilter.java:155) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:148) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:352) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_111]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_111]
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:288) ~[jedis-3.3.0.jar:na]
+	at org.crazycake.shiro.RedisManager.getJedis(RedisManager.java:38) ~[shiro-redis-3.3.1.jar:na]
+	at org.crazycake.shiro.common.WorkAloneRedisManager.set(WorkAloneRedisManager.java:72) ~[shiro-redis-3.3.1.jar:na]
+	at org.crazycake.shiro.RedisSessionDAO.saveSession(RedisSessionDAO.java:103) ~[shiro-redis-3.3.1.jar:na]
+	at org.crazycake.shiro.RedisSessionDAO.doCreate(RedisSessionDAO.java:174) ~[shiro-redis-3.3.1.jar:na]
+	at org.apache.shiro.session.mgt.eis.AbstractSessionDAO.create(AbstractSessionDAO.java:116) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.session.mgt.DefaultSessionManager.create(DefaultSessionManager.java:177) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.session.mgt.DefaultSessionManager.doCreateSession(DefaultSessionManager.java:158) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.session.mgt.AbstractValidatingSessionManager.createSession(AbstractValidatingSessionManager.java:136) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.start(AbstractNativeSessionManager.java:99) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.SessionsSecurityManager.start(SessionsSecurityManager.java:152) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.getSession(DelegatingSubject.java:340) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.getSession(DelegatingSubject.java:316) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSubjectDAO.mergePrincipals(DefaultSubjectDAO.java:207) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSubjectDAO.saveToSession(DefaultSubjectDAO.java:165) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSubjectDAO.save(DefaultSubjectDAO.java:146) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSecurityManager.save(DefaultSecurityManager.java:388) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSecurityManager.createSubject(DefaultSecurityManager.java:355) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSecurityManager.createSubject(DefaultSecurityManager.java:188) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:288) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260) ~[shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.filter.authc.AuthenticatingFilter.executeLogin(AuthenticatingFilter.java:53) ~[shiro-web-1.6.0.jar:1.6.0]
+	at com.hygge.vblog.shiro.JwtFilter.onAccessDenied(JwtFilter.java:74) ~[classes/:na]
+	at org.apache.shiro.web.filter.AccessControlFilter.onAccessDenied(AccessControlFilter.java:133) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:214) ~[shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:189) ~[shiro-web-1.6.0.jar:1.6.0]
+	at com.hygge.vblog.shiro.JwtFilter.preHandle(JwtFilter.java:121) ~[classes/:na]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131) ~[shiro-web-1.6.0.jar:1.6.0]
+	... 45 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to 127.0.0.1:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:165) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:109) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1904) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:130) ~[jedis-3.3.0.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50) ~[jedis-3.3.0.jar:na]
+	... 74 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_111]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_111]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_111]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_111]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_111]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_111]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_111]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_111]
+	at redis.clients.jedis.DefaultJedisSocketFactory.createSocket(DefaultJedisSocketFactory.java:53) ~[jedis-3.3.0.jar:na]
+	at redis.clients.jedis.Connection.connect(Connection.java:158) ~[jedis-3.3.0.jar:na]
+	... 81 common frames omitted
+
+2022-04-12 21:31:26.276 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VArticleMapper.selectAll    : ==>  Preparing: SELECT a.id, a.title, a.description, a.context, c.id as categoryId, c.`name` as category, a.number_view, a.created_date, a.`status` FROM v_article as a LEFT JOIN v_categorys c ON a.categorys_id=c.id order by created_date desc limit ?,?
+2022-04-12 21:31:26.278 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VArticleMapper.selectAll    : ==> Parameters: 0(Integer), 5(Integer)
+2022-04-12 21:31:26.323 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VArticleMapper.selectAll    : <==      Total: 5
+2022-04-12 21:31:26.381 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:31:26.382 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 20(Integer)
+2022-04-12 21:31:26.417 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 1
+2022-04-12 21:31:26.489 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:31:26.489 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 20(Integer)
+2022-04-12 21:31:26.521 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:31:26.554 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:31:26.555 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 19(Integer)
+2022-04-12 21:31:26.592 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 0
+2022-04-12 21:31:26.657 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:31:26.659 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 19(Integer)
+2022-04-12 21:31:26.694 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:31:26.738 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:31:26.739 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 16(Integer)
+2022-04-12 21:31:26.774 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 0
+2022-04-12 21:31:26.846 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:31:26.847 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 16(Integer)
+2022-04-12 21:31:26.879 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:31:26.910 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:31:26.910 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 15(Integer)
+2022-04-12 21:31:26.945 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 1
+2022-04-12 21:31:27.010 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:31:27.010 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 15(Integer)
+2022-04-12 21:31:27.044 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:31:27.078 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:31:27.078 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 14(Integer)
+2022-04-12 21:31:27.112 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 0
+2022-04-12 21:31:27.182 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:31:27.182 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 14(Integer)
+2022-04-12 21:31:27.215 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:31:27.243 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VArticleMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_article
+2022-04-12 21:31:27.244 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VArticleMapper.selectCount  : ==> Parameters: 
+2022-04-12 21:31:27.279 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.v.mapper.VArticleMapper.selectCount  : <==      Total: 1
+2022-04-12 21:31:50.680 DEBUG 13808 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:31:50.680 DEBUG 13808 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:31:50.683 DEBUG 13808 --- [http-nio-8181-exec-4] c.h.v.m.VCategorysMapper.selectList      : ==>  Preparing: SELECT id,name FROM v_categorys ORDER BY id DESC
+2022-04-12 21:31:50.684 DEBUG 13808 --- [http-nio-8181-exec-4] c.h.v.m.VCategorysMapper.selectList      : ==> Parameters: 
+2022-04-12 21:31:50.741 DEBUG 13808 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:31:50.747 DEBUG 13808 --- [http-nio-8181-exec-4] c.h.v.m.VCategorysMapper.selectList      : <==      Total: 4
+2022-04-12 21:31:51.075 DEBUG 13808 --- [http-nio-8181-exec-1] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:31:51.075 DEBUG 13808 --- [http-nio-8181-exec-1] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:31:51.120 DEBUG 13808 --- [http-nio-8181-exec-1] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:31:55.562 DEBUG 13808 --- [http-nio-8181-exec-2] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:31:55.563 DEBUG 13808 --- [http-nio-8181-exec-2] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:31:55.568 DEBUG 13808 --- [http-nio-8181-exec-10] c.h.v.m.VCategorysMapper.selectList      : ==>  Preparing: SELECT id,name FROM v_categorys ORDER BY id DESC
+2022-04-12 21:31:55.569 DEBUG 13808 --- [http-nio-8181-exec-10] c.h.v.m.VCategorysMapper.selectList      : ==> Parameters: 
+2022-04-12 21:31:55.607 DEBUG 13808 --- [http-nio-8181-exec-2] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:31:55.608 DEBUG 13808 --- [http-nio-8181-exec-10] c.h.v.m.VCategorysMapper.selectList      : <==      Total: 4
+2022-04-12 21:31:55.718 DEBUG 13808 --- [http-nio-8181-exec-9] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:31:55.719 DEBUG 13808 --- [http-nio-8181-exec-9] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:31:55.760 DEBUG 13808 --- [http-nio-8181-exec-9] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:32:00.641 ERROR 13808 --- [http-nio-8181-exec-7] c.h.v.c.e.GlobalExceptionHandler         : 运行时异常：------{}
+
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1534) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1442) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1228) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1211) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:975) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:360) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:134) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:97) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:84) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:215) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:53) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at com.hygge.vblog.common.util.RedisUtil.get(RedisUtil.java:91) ~[classes/:na]
+	at com.hygge.vblog.controller.IndexController.getAllPage(IndexController.java:102) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_111]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_111]
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1440) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	... 84 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:242) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:206) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_111]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:211) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:201) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:58) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	... 85 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /101.35.253.129:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261) ~[netty-transport-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:164) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500) ~[netty-transport-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	... 1 common frames omitted
+
+2022-04-12 21:32:08.345 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:32:08.346 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:32:08.348 DEBUG 13808 --- [http-nio-8181-exec-4] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:32:08.349 DEBUG 13808 --- [http-nio-8181-exec-4] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:32:08.371 DEBUG 13808 --- [http-nio-8181-exec-3] c.h.v.m.VCategorysMapper.selectList      : ==>  Preparing: SELECT id,name FROM v_categorys ORDER BY id DESC
+2022-04-12 21:32:08.372 DEBUG 13808 --- [http-nio-8181-exec-3] c.h.v.m.VCategorysMapper.selectList      : ==> Parameters: 
+2022-04-12 21:32:08.383 DEBUG 13808 --- [http-nio-8181-exec-6] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:32:08.388 DEBUG 13808 --- [http-nio-8181-exec-4] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:32:08.416 DEBUG 13808 --- [http-nio-8181-exec-3] c.h.v.m.VCategorysMapper.selectList      : <==      Total: 4
+2022-04-12 21:32:10.663 ERROR 13808 --- [http-nio-8181-exec-5] c.h.v.c.e.GlobalExceptionHandler         : 运行时异常：------{}
+
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1534) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1442) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1228) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1211) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:975) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:360) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:134) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:97) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:84) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:215) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:53) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at com.hygge.vblog.common.util.RedisUtil.get(RedisUtil.java:91) ~[classes/:na]
+	at com.hygge.vblog.controller.IndexController.getAllPage(IndexController.java:102) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_111]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_111]
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1440) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	... 84 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:242) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:206) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_111]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:211) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:201) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:58) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	... 85 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /101.35.253.129:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261) ~[netty-transport-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:164) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500) ~[netty-transport-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	... 1 common frames omitted
+
+2022-04-12 21:32:20.668 ERROR 13808 --- [http-nio-8181-exec-1] c.h.v.c.e.GlobalExceptionHandler         : 运行时异常：------{}
+
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1534) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1442) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1228) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1211) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:975) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:360) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:134) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:97) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:84) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:215) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:53) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at com.hygge.vblog.common.util.RedisUtil.get(RedisUtil.java:91) ~[classes/:na]
+	at com.hygge.vblog.controller.IndexController.getAllPage(IndexController.java:102) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:112) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) [shiro-core-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) [shiro-web-1.6.0.jar:1.6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_111]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_111]
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1440) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	... 84 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 101.35.253.129:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:242) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:206) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_111]
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:211) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:201) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:58) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[commons-pool2-2.8.1.jar:2.8.1]
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117) ~[lettuce-core-5.3.5.RELEASE.jar:5.3.5.RELEASE]
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103) ~[spring-data-redis-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	... 85 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /101.35.253.129:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261) ~[netty-transport-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:164) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500) ~[netty-transport-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.55.Final.jar:4.1.55.Final]
+	... 1 common frames omitted
+
+2022-04-12 21:33:16.974  INFO 13808 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-12 21:33:16.979  INFO 13808 --- [SpringContextShutdownHook] a.s.s.m.AbstractValidatingSessionManager : Disabled session validation scheduler.
+2022-04-12 21:33:17.064  INFO 13808 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-12 21:33:17.074  INFO 13808 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-12 21:33:55.877  INFO 16588 --- [main] com.hygge.vblog.VblogApplication         : Starting VblogApplication on 不染 with PID 16588 (E:\zeng\study\javaProject\vblog\vblog\target\classes started by hygge in E:\zeng\study\javaProject\vblog\vblog)
+2022-04-12 21:33:55.909  INFO 16588 --- [main] com.hygge.vblog.VblogApplication         : No active profile set, falling back to default profiles: default
+2022-04-12 21:34:04.155  INFO 16588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-12 21:34:04.171  INFO 16588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-12 21:34:04.243  INFO 16588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 0 Redis repository interfaces.
+2022-04-12 21:34:05.679  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$ef6855e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:05.866  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration$$EnhancerBySpringCGLIB$$f1fb948d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:05.928  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jwtUtil' of type [com.hygge.vblog.common.util.JwtUtil] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:06.850  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:06.858  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatisPlusConfig' of type [com.hygge.vblog.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$2adba83d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:06.884  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatisPlusInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:06.941  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:06.943  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:06.963  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:07.244  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:07.303  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:12.985  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:12.995  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:12.996  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'VUserMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:13.001  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'VUserMapper' of type [com.sun.proxy.$Proxy65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:13.006  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.mail.MailSenderPropertiesConfiguration' of type [org.springframework.boot.autoconfigure.mail.MailSenderPropertiesConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:13.012  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.mail-org.springframework.boot.autoconfigure.mail.MailProperties' of type [org.springframework.boot.autoconfigure.mail.MailProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:13.034  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mailSender' of type [org.springframework.mail.javamail.JavaMailSenderImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:13.035  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mailUtil' of type [com.hygge.vblog.common.util.MailUtil] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:13.044  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.hygge.vblog.config.RedisConfig$$EnhancerBySpringCGLIB$$46ecb5ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:13.081  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:13.087  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:13.418  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:14.693  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:15.262  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisTemplate' of type [org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:15.263  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisUtil' of type [com.hygge.vblog.common.util.RedisUtil] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:15.264  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'VUserServiceImpl' of type [com.hygge.vblog.service.impl.VUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:15.266  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'accountRealm' of type [com.hygge.vblog.shiro.AccountRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:15.314  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiro-redis.redis-manager-org.crazycake.shiro.RedisManagerProperties' of type [org.crazycake.shiro.RedisManagerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:15.320  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiro-redis.cache-manager-org.crazycake.shiro.CacheManagerProperties' of type [org.crazycake.shiro.CacheManagerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:15.325  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiro-redis.session-dao-org.crazycake.shiro.RedisSessionDAOProperties' of type [org.crazycake.shiro.RedisSessionDAOProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:15.328  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.crazycake.shiro.ShiroRedisAutoConfiguration' of type [org.crazycake.shiro.ShiroRedisAutoConfiguration$$EnhancerBySpringCGLIB$$ec22be4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:15.349  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:15.353  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisCacheManager' of type [org.crazycake.shiro.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:15.363  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:15.515  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:18.611  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:18.634  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:18.890  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jwtFilter' of type [com.hygge.vblog.shiro.JwtFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:18.909  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.hygge.vblog.config.ShiroConfig$$EnhancerBySpringCGLIB$$fc1e2e61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:18.913  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroFilterChainDefinition' of type [org.apache.shiro.spring.web.config.DefaultShiroFilterChainDefinition] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:18.941  INFO 16588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 21:34:22.098  INFO 16588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2022-04-12 21:34:22.337  INFO 16588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-12 21:34:22.337  INFO 16588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-04-12 21:34:25.402  INFO 16588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-12 21:34:25.403  INFO 16588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 29191 ms
+2022-04-12 21:34:29.413  INFO 16588 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-12 21:34:33.558  INFO 16588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2022-04-12 21:34:33.604  INFO 16588 --- [main] com.hygge.vblog.VblogApplication         : Started VblogApplication in 41.894 seconds (JVM running for 64.387)
+2022-04-12 21:35:52.426  INFO 16588 --- [http-nio-8181-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-12 21:35:52.427  INFO 16588 --- [http-nio-8181-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-12 21:35:52.454  INFO 16588 --- [http-nio-8181-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 27 ms
+2022-04-12 21:35:52.493  INFO 16588 --- [http-nio-8181-exec-10] a.s.s.m.AbstractValidatingSessionManager : Enabling session validation scheduler...
+2022-04-12 21:35:52.888  INFO 16588 --- [http-nio-8181-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-12 21:35:54.158  INFO 16588 --- [http-nio-8181-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-12 21:35:54.237 DEBUG 16588 --- [http-nio-8181-exec-6] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:35:55.285 DEBUG 16588 --- [http-nio-8181-exec-6] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:35:55.382 DEBUG 16588 --- [http-nio-8181-exec-6] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:35:55.396 DEBUG 16588 --- [http-nio-8181-exec-10] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:35:55.396 DEBUG 16588 --- [http-nio-8181-exec-10] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:35:55.441 DEBUG 16588 --- [http-nio-8181-exec-10] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:35:55.461 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.VCategorysMapper.selectList      : ==>  Preparing: SELECT id,name FROM v_categorys ORDER BY id DESC
+2022-04-12 21:35:55.462 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.VCategorysMapper.selectList      : ==> Parameters: 
+2022-04-12 21:35:55.512 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.VCategorysMapper.selectList      : <==      Total: 4
+2022-04-12 21:35:57.925 ERROR 16588 --- [http-nio-8181-exec-8] c.h.vblog.controller.IndexController     : redis出现异常---
+2022-04-12 21:35:57.968 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY id ASC
+2022-04-12 21:35:57.968 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:35:58.027 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:35:58.035 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.updateById  : ==>  Preparing: UPDATE v_user SET user_name=?, password=?, email=?, avator=?, qq=?, created_date=?, icp=?, signature=?, count=? WHERE id=?
+2022-04-12 21:35:58.041 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.updateById  : ==> Parameters: hygge(String), e10adc3949ba59abbe56e057f20f883e(String), 3163367790@qq.com(String), http://corehome0.oss-cn-hongkong.aliyuncs.com/images/as2022-02-27T17%3A04%3A49.211-b76290c4-57e4-4781.jpg?Expires=1647780079&OSSAccessKeyId=LTAI4G3jsiM4zfyA3geoN3eX&Signature=ufknr4DdyIu9G1KY0z2fsr2udoI%3D(String), 3163367790(String), 2022-02-05 20:39:07.0(Timestamp), 赣ICP备2021011250号-1(String), 你好啊！！！(String), 4(Integer), 1(Integer)
+2022-04-12 21:35:58.137 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.vblog.mapper.VUserMapper.updateById  : <==    Updates: 1
+2022-04-12 21:35:58.139 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.VArticleMapper.selectAllFlag     : ==>  Preparing: SELECT a.id, a.title, a.description, a.context, c.id as categoryId, c.`name` as category, a.number_view, a.created_date, a.`status` FROM v_article as a LEFT JOIN v_categorys c ON a.categorys_id=c.id where a.status=? order by created_date desc limit ?,?
+2022-04-12 21:35:58.141 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.VArticleMapper.selectAllFlag     : ==> Parameters: 1(Integer), 0(Integer), 5(Integer)
+2022-04-12 21:35:58.192 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.VArticleMapper.selectAllFlag     : <==      Total: 5
+2022-04-12 21:35:58.251 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:35:58.252 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 20(Integer)
+2022-04-12 21:35:58.305 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 1
+2022-04-12 21:35:58.395 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:35:58.395 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 20(Integer)
+2022-04-12 21:35:58.441 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:35:58.488 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:35:58.489 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 19(Integer)
+2022-04-12 21:35:58.528 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 0
+2022-04-12 21:35:58.615 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:35:58.615 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 19(Integer)
+2022-04-12 21:35:58.655 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:35:58.705 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:35:58.706 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 16(Integer)
+2022-04-12 21:35:58.778 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 0
+2022-04-12 21:35:58.874 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:35:58.875 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 16(Integer)
+2022-04-12 21:35:58.924 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:35:58.962 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:35:58.963 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 15(Integer)
+2022-04-12 21:35:59.010 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 1
+2022-04-12 21:35:59.102 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:35:59.102 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 15(Integer)
+2022-04-12 21:35:59.152 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:35:59.192 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:35:59.192 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 13(Integer)
+2022-04-12 21:35:59.260 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 0
+2022-04-12 21:35:59.344 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:35:59.346 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 13(Integer)
+2022-04-12 21:35:59.401 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:35:59.409 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VArticleMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_article WHERE (status = ?)
+2022-04-12 21:35:59.428 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VArticleMapper.selectCount  : ==> Parameters: 1(Integer)
+2022-04-12 21:35:59.483 DEBUG 16588 --- [http-nio-8181-exec-8] c.h.v.mapper.VArticleMapper.selectCount  : <==      Total: 1
+2022-04-12 21:42:28.811 DEBUG 16588 --- [http-nio-8181-exec-1] c.h.v.m.VCategorysMapper.selectList      : ==>  Preparing: SELECT id,name FROM v_categorys ORDER BY id DESC
+2022-04-12 21:42:28.812 DEBUG 16588 --- [http-nio-8181-exec-1] c.h.v.m.VCategorysMapper.selectList      : ==> Parameters: 
+2022-04-12 21:42:28.825 DEBUG 16588 --- [http-nio-8181-exec-7] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:42:28.826 DEBUG 16588 --- [http-nio-8181-exec-7] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:42:28.849 DEBUG 16588 --- [http-nio-8181-exec-1] c.h.v.m.VCategorysMapper.selectList      : <==      Total: 4
+2022-04-12 21:42:28.860 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.VArticleMapper.selectAllFlag     : ==>  Preparing: SELECT a.id, a.title, a.description, a.context, c.id as categoryId, c.`name` as category, a.number_view, a.created_date, a.`status` FROM v_article as a LEFT JOIN v_categorys c ON a.categorys_id=c.id where a.status=? order by created_date desc limit ?,?
+2022-04-12 21:42:28.861 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.VArticleMapper.selectAllFlag     : ==> Parameters: 1(Integer), 0(Integer), 5(Integer)
+2022-04-12 21:42:28.876 DEBUG 16588 --- [http-nio-8181-exec-7] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:42:28.918 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.VArticleMapper.selectAllFlag     : <==      Total: 5
+2022-04-12 21:42:28.965 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:42:28.966 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 20(Integer)
+2022-04-12 21:42:29.003 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 1
+2022-04-12 21:42:29.090 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:42:29.092 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 20(Integer)
+2022-04-12 21:42:29.130 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:42:29.172 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:42:29.173 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 19(Integer)
+2022-04-12 21:42:29.182 DEBUG 16588 --- [http-nio-8181-exec-10] c.h.vblog.mapper.VUserMapper.selectList  : ==>  Preparing: SELECT id,user_name,password,email,avator,qq,created_date,icp,signature,count FROM v_user ORDER BY created_date ASC
+2022-04-12 21:42:29.183 DEBUG 16588 --- [http-nio-8181-exec-10] c.h.vblog.mapper.VUserMapper.selectList  : ==> Parameters: 
+2022-04-12 21:42:29.212 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 0
+2022-04-12 21:42:29.226 DEBUG 16588 --- [http-nio-8181-exec-10] c.h.vblog.mapper.VUserMapper.selectList  : <==      Total: 1
+2022-04-12 21:42:29.297 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:42:29.299 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 19(Integer)
+2022-04-12 21:42:29.339 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:42:29.380 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:42:29.381 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 16(Integer)
+2022-04-12 21:42:29.423 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 0
+2022-04-12 21:42:29.511 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:42:29.512 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 16(Integer)
+2022-04-12 21:42:29.551 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:42:29.588 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:42:29.589 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 15(Integer)
+2022-04-12 21:42:29.625 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 1
+2022-04-12 21:42:29.704 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:42:29.706 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 15(Integer)
+2022-04-12 21:42:29.745 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:42:29.782 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : ==>  Preparing: SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=?)
+2022-04-12 21:42:29.782 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : ==> Parameters: 13(Integer)
+2022-04-12 21:42:29.819 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.m.V.selectTagNameByArticleId       : <==      Total: 0
+2022-04-12 21:42:29.895 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_comment WHERE (article_id = ?)
+2022-04-12 21:42:29.895 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : ==> Parameters: 13(Integer)
+2022-04-12 21:42:29.933 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VCommentMapper.selectCount  : <==      Total: 1
+2022-04-12 21:42:29.935 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VArticleMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) FROM v_article WHERE (status = ?)
+2022-04-12 21:42:29.935 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VArticleMapper.selectCount  : ==> Parameters: 1(Integer)
+2022-04-12 21:42:29.974 DEBUG 16588 --- [http-nio-8181-exec-9] c.h.v.mapper.VArticleMapper.selectCount  : <==      Total: 1
+2022-04-12 22:07:37.822  INFO 16588 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-12 22:07:37.824  INFO 16588 --- [SpringContextShutdownHook] a.s.s.m.AbstractValidatingSessionManager : Disabled session validation scheduler.
+2022-04-12 22:07:37.961  INFO 16588 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-12 22:07:37.974  INFO 16588 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

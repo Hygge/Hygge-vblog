@@ -1,0 +1,97 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+  #邮件发送配置
+  mail:
+    default-encoding: utf-8
+    username:
+    password:
+    host: smtp.163.com
+    port: 587
+    properties.mail.smtp.auth: true
+    properties.mail.smtp.starttls.enable: true
+    properties.mail.smtp.starttls.required: true
+    properties.mail.smtp.ssl.enable: true #开启SSL
+  #  数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/myblog?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+  redis:
+    host: localhost
+    # 连接超时时间（记得添加单位，Duration）
+    timeout: 10000ms
+    # Redis默认情况下有16个分片，这里配置具体使用的分片
+    # database: 0
+    lettuce:
+      pool:
+        # 连接池最大连接数（使用负值表示没有限制） 默认 8
+        max-active: 8
+        # 连接池最大阻塞等待时间（使用负值表示没有限制） 默认 -1
+        max-wait: -1ms
+        # 连接池中的最大空闲连接 默认 8
+        max-idle: 8
+        # 连接池中的最小空闲连接 默认 0
+        min-idle: 0
+  cache:
+    # 一般来说是不用配置的，Spring Cache 会根据依赖的包自行装配
+    type: redis
+
+mybatis-plus:
+  type-aliases-package: com.hygge.vblog.domain
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+  global-config:
+    db-config:
+      id-type: auto
+      field-strategy: not_empty
+      #驼峰下划线转换
+      column-underline: true
+      #逻辑删除配置
+      logic-delete-value: 0
+      logic-not-delete-value: 1
+      db-type: mysql
+    refresh: false
+  mapper-locations: classpath:/mapper/*.xml
+
+#日志打印
+logging:
+  level:
+    com.hygge.vblog.mapper: DEBUG
+  file:
+    path: ./logs/api.log
+
+shiro-redis:
+  enabled: true
+  redis-manager:
+    host: 127.0.0.1:6379
+jwt:
+  #  加密密钥   hygge RC4加密
+  secret: U2FsdGVkX1+YveJgxLeqSrMITRt2
+  #  token有效时间毫秒值
+  expire: 300000
+  header: Authorization
+
+#图片保存位置
+img:
+  address: images
+  #必应壁纸
+  bing: https://cn.bing.com
+  api: https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN
+
+
+#阿里云oss对象存储
+oss:
+  id:
+  secret:
+  endpoint:
+  bucketName:
+  bucket:
+
+#发送邮箱
+fromEmail:

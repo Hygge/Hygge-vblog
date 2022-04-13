@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hygge.vblog.mapper.VTagMapper">
+
+    <resultMap id="BaseResultMap" type="com.hygge.vblog.domain.VTag">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="tagName" column="tag_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,tag_name
+    </sql>
+    <select id="selectTagNameByArticleId" resultType="java.lang.String" parameterType="int">
+        SELECT tag_name as tag FROM v_tag WHERE id in (SELECT tag_id FROM v_tag_relationship WHERE article_id=#{id})
+    </select>
+</mapper>

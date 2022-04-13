@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hygge.vblog.mapper.VCommentMapper">
+
+    <resultMap id="BaseResultMap" type="com.hygge.vblog.domain.VComment">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="content" column="content" jdbcType="VARCHAR"/>
+            <result property="userId" column="user_id" jdbcType="INTEGER"/>
+            <result property="articleId" column="article_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,content,user_id,
+        article_id, username, email, address
+    </sql>
+    <select id="selectAllByArticleIdAfter" resultType="com.hygge.vblog.common.vo.CommentsVo"
+            parameterType="java.lang.Integer">
+        select id, content, article_id, username, email, address from v_comment where article_id=#{id}
+
+    </select>
+</mapper>
