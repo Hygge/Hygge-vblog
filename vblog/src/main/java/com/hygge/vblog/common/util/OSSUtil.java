@@ -117,8 +117,6 @@ public class OSSUtil {
         if (ossClient == null) {
             synchronized (OSSUtil.class) {
                 if (ossClient == null) {
-                   /* ossClient = new OSSClientBuilder().build("oss-cn-hongkong.aliyuncs.com",
-                            "LTAI5tL33T4KxbUm5uxPsjQm","dMslQbUla2myytDQcBQczVoIVkzvD1");*/
                     ossClient = new OSSClientBuilder().build(endpoint,
                             accessKeyId, sec);
                 }
