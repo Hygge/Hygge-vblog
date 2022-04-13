@@ -1,0 +1,115 @@
+.post {
+    position: relative;
+    padding: 40px;
+    background: #fff;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+.post-date {
+    background-color: #97dffd;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    height: 60px;
+    width: 70px;
+    padding-top: 10px;
+    border-radius: 100px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.post-badge {
+    position: absolute;
+    left: -16px;
+    top: 105px;
+    border-color: #47456d;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    background-color: #97dffd;
+    margin: 5px 0 15px 2px;
+    font-size: 14px;
+    border-radius: 0 4px 4px 0;
+    display: inline-block;
+    padding: 7px 11px 7px 32px;
+    line-height: 1;
+}
+.post-date .post-day {
+    font-size: 30px;
+    font-weight: 700;
+}
+.post-badge a {
+    color: #fff;
+}
+.post-header {
+    margin-bottom: 20px;
+}
+.posts-expand .post-title, .posts-expand .post-title-link {
+    color: #444;
+    font-size: 25px;
+    font-weight: 700;
+}
+.posts-expand .post-title {
+    text-align: center;
+    word-break: break-word;
+    font-weight: 400;
+}
+.posts-expand .post-meta {
+    color: #555;
+    margin-top: 5px;
+}
+.posts-expand .post-meta {
+    margin: 3px 0 50px 0;
+    color: #999;
+    font-family: "PingFang SC", "Microsoft YaHei", Lato, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+.posts-expand .post-body {
+    text-align: justify;
+}
+p {
+    margin: 0 0 20px 0;
+}
+.posts-expand .post-body img {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 3px;
+}
+.zoomify {
+    cursor: pointer;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+img {
+    border: 0;
+}
+.post-button {
+    margin-top: 40px;
+}
+.text-center {
+    text-align: center;
+}
+.btn {
+    background: #97dffd;
+    color: #fff;
+    font-size: 13px;
+    padding: 1px 15px;
+    border-radius: 5px;
+    border: none;
+}
+.btn {
+    display: inline-block;
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    line-height: 2;
+}
