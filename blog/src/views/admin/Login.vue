@@ -10,24 +10,36 @@
       </el-form-item>
       <el-form-item label="密码" prop="password">
         <el-input type="password" v-model="loginForm.password" autocomplete="off"
-                  @keyup.enter.native="submitForm(loginForm)"></el-input>
+                  @keyup.enter.native="useVerify"></el-input>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" @click="submitForm(loginForm)">登录</el-button>
+        <el-button type="primary"
+                   @click.prevent="useVerify"
+
+        >登录</el-button>
+<!--        @click="submitForm(loginForm)"-->
       </el-form-item>
+      <Verify
+          ref="verify"
+          :captchaType="'blockPuzzle'"
+          :imgSize="{ width: '330px', height: '155px' }"
+          @success="submitForm"
+        ></Verify>
     </el-form>
   </div>
 </template>
 
 <script>
+import Verify from "@/components/verifition/Verify"
 export default {
   name: "login",
-  components: {},
+  components: { Verify},
   data() {
     return {
       loginForm: {
         userName: '',
         password: '',
+        captchaVerification: '',
       },
       rules: {
         userName: [
@@ -41,11 +53,15 @@ export default {
     };
   },
   methods: {
-
+    useVerify(){
+      this.$refs.verify.show()
+      console.log(this.loginForm.userName +"12"+"验证码显示")
+    },
     // 登录
-    submitForm(formName) {
-      console.log(formName.userName)
-      console.log(formName.password)
+    submitForm(params) {
+      let formName = this.loginForm
+      formName.captchaVerification = params.captchaVerification
+      console.log(formName)
       let _this = this
       _this.$refs[formName].validate((valid) => {
           if (valid) {

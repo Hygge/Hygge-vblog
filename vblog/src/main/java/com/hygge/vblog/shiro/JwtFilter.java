@@ -67,7 +67,15 @@ public class JwtFilter extends AuthenticatingFilter {
         else {
             Claims claims = jwtUtil.parseJWT(token);
             if (claims == null || jwtUtil.isTokenExpired(claims.getExpiration())){
-                throw new ExpiredCredentialsException("token已失效，请重新登录");
+                // 一般springBoot自带的全局异常捕获机制都是在业务层发生的异常来进行捕获的，
+                // 因为过滤器的执行顺序是在全局异常机制启动之前执行的，所以一旦过滤器中发生异常，全局异常捕获机制无法使用
+                try {
+                    throw new ExpiredCredentialsException("token已失效，请重新登录");
+                }catch (Exception e){
+                    //将异常分发到/expiredJwtException控制器
+                    request.getRequestDispatcher("/expiredJwtException").forward(request, servletResponse);
+                }
+                return false;
             }
         }
         //执行登录

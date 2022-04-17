@@ -6,6 +6,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.ShiroException;
 import org.apache.shiro.authc.ExpiredCredentialsException;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -60,7 +62,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = ExpiredCredentialsException.class)
     public Result handler(ExpiredCredentialsException e){
         log.error("授权登录异常：----{}", e.getMessage());
-        return Result.no(401, e.getMessage());
+        return Result.no(e.getMessage());
     }
     /**
      * shiro异常
@@ -71,7 +73,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = ShiroException.class)
     public Result handler(ShiroException e){
         log.error("运行时异常：------{}", e.getMessage());
-        return Result.no(401, "token已失效，请重新登录");
+        return Result.no(401,"token已失效，请重新登录");
     }
     /**
      * 运行时异常
@@ -83,6 +85,12 @@ public class GlobalExceptionHandler {
     public Result handler(RuntimeException runtimeException){
         log.error("运行时异常：------{}", runtimeException);
         return Result.no(runtimeException.getMessage());
+    }
+
+    @ExceptionHandler(HyggeException.class)
+    public Result unauthorizedExceptionHandler(HyggeException e){
+        log.error("HyggeException Message :{}",e.getMessage());
+        return Result.no(e.getCode(), e.getMsg());
     }
 
 }

@@ -2,8 +2,9 @@ import axios from 'axios'
 import Element from "element-ui"
 import store from "@/store/store"
 import router from "@/router/index"
+import baseUrl from '/src/baseUrl'
 
-axios.defaults.baseURL = 'http://localhost:8181'
+axios.defaults.baseURL = baseUrl.BaseURL
 axios.interceptors.request.use(
     config => {
         if (store.state.token) {
@@ -11,6 +12,12 @@ axios.interceptors.request.use(
         }
         //console.log("前置拦截")
         // 可以统一设置请求头
+        // config = {
+        //     headers:{
+        //         'X-Requested-With': 'XMLHttpRequest',
+        //         'Content-Type': 'application/json; charset=UTF-8'
+        //     }
+        // }
 
         return config
     },
@@ -21,9 +28,12 @@ axios.interceptors.request.use(
 
 axios.interceptors.response.use(response => {
         const res = response.data;
-        //console.log("后置拦截")
+        console.log("后置拦截")
+        console.log(res.repCode)
         // 当结果的code是否为200的情况
-        if (res.code === 200 || res.code === 404) {
+        if (res.code === 200 || res.code === 404 || res.repCode === '0000'
+        || res.repCode === '0011'
+        ) {
             return response
         } else {
             // 弹窗异常信息

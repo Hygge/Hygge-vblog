@@ -3,9 +3,14 @@ package com.hygge.vblog.controller;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.lang.Assert;
 import cn.hutool.crypto.SecureUtil;
+import com.anji.captcha.model.common.ResponseModel;
+import com.anji.captcha.model.vo.CaptchaVO;
+import com.anji.captcha.service.CaptchaService;
+import com.anji.captcha.service.impl.BlockPuzzleCaptchaServiceImpl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.hygge.vblog.common.dto.LoginDto;
 import com.hygge.vblog.common.dto.RegisterBTO;
+import com.hygge.vblog.common.exception.HyggeException;
 import com.hygge.vblog.common.result.Result;
 import com.hygge.vblog.common.util.ImgUtil;
 import com.hygge.vblog.common.util.JwtUtil;
@@ -24,11 +29,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.Valid;
 import java.io.IOException;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -59,11 +65,15 @@ public class AccountController {
 
     @Value("${fromEmail}")
     private String fromEmail;
+
     @Autowired
     ImgUtil imgUtil;
     //        文档链接  https://blog.csdn.net/weixin_43247803/article/details/113666136
     @Autowired
     RedisUtil redisUtil;
+
+    @Autowired
+    private CaptchaService captchaService;
 
 
     /**
@@ -74,7 +84,16 @@ public class AccountController {
      * @return
      */
     @PostMapping("/login")
-    public Result login(@RequestBody LoginDto loginDto, HttpServletResponse response) {
+    public Result login(@Valid@RequestBody LoginDto loginDto, HttpServletResponse response) {
+        // 登陆后台登录需要再校验一遍验证码
+        CaptchaVO captchaVO = new CaptchaVO();
+        captchaVO.setCaptchaVerification(loginDto.getCaptchaVerification());
+        ResponseModel responseModel = captchaService.verification(captchaVO);
+        if (!responseModel.isSuccess()) {
+            return Result.no("验证码错误");
+        }
+
+
         QueryWrapper<VUser> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("user_name", loginDto.getUserName()).or().eq("email", loginDto.getUserName());
         VUser user = userService.getOne(queryWrapper);
@@ -111,6 +130,8 @@ public class AccountController {
      */
     @PostMapping("/register")
     public Result Register(@RequestBody RegisterBTO registerBTO) {
+        // 检查数据库有没有user，有代表注册过了，不能注册了
+
 
         return Result.ok(200, "注册成功");
     }
@@ -215,9 +236,9 @@ public class AccountController {
     @RequiresAuthentication
     @PostMapping("/upUserInfo")
     public Result upUserInfo(@RequestBody UserVo userVo) {
-      /*  AccountProfile principal = (AccountProfile)SecurityUtils.getSubject().getPrincipal();
-        Integer id = principal.getId();*/
-        VUser byId = userService.getById(userVo.getId());
+        AccountProfile principal = (AccountProfile)SecurityUtils.getSubject().getPrincipal();
+        Integer id = principal.getId();
+        VUser byId = userService.getById(id);
         BeanUtil.copyProperties(userVo, byId, "coverImgUrl");
         userService.update(byId, new QueryWrapper<VUser>().eq("id", byId.getId()));
         return Result.ok(userVo);
