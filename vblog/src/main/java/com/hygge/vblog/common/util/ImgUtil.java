@@ -4,8 +4,10 @@ import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import cn.hutool.json.JSONUtil;
 import com.hygge.vblog.common.dto.BingImgsDTO;
+import com.hygge.vblog.config.HyggeConfig;
 import com.hygge.vblog.domain.BingWallpaper;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -20,11 +22,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class ImgUtil {
 
-    @Value("${img.bing}")
-    private String bing;
-    @Value("${img.api}")
-    private String api;
-
+    @Autowired
+    private HyggeConfig hyggeConfig;
 
     /**
      * 模拟http请求，最新壁纸地址
@@ -32,10 +31,10 @@ public class ImgUtil {
      */
     public String getWallpaper(){
         try {
-            HttpResponse execute = HttpRequest.get(api).execute();
+            HttpResponse execute = HttpRequest.get(hyggeConfig.getBingApi()).execute();
             BingImgsDTO bingImgsDTO = JSONUtil.toBean(execute.body(), BingImgsDTO.class);
             BingWallpaper bingWallpaper = bingImgsDTO.getImages().get(0);
-            return bing + bingWallpaper.getUrl();
+            return hyggeConfig.getBing() + bingWallpaper.getUrl();
         }catch (Exception e){
             log.error("壁纸获取失败" + e.getMessage());
             return "e";

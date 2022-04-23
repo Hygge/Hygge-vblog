@@ -5,6 +5,7 @@ import com.hygge.vblog.common.util.ImgUtil;
 import com.hygge.vblog.common.util.JwtUtil;
 import com.hygge.vblog.common.util.OSSUtil;
 import com.hygge.vblog.common.util.RedisUtil;
+import com.hygge.vblog.config.HyggeConfig;
 import com.hygge.vblog.service.VUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -38,23 +39,13 @@ public class CommonController {
     VUserService userService;
     @Autowired
     JwtUtil jwtUtil;
-    @Value("${jwt.header}")
-    private String header;
-    /**
-     * 图片默认保存文件夹
-     */
-    @Value("${img.address}")
-    private String address;
-
-    @Value("${fromEmail}")
-    private String fromEmail;
-
     @Autowired
     ImgUtil imgUtil;
     //        文档链接  https://blog.csdn.net/weixin_43247803/article/details/113666136
     @Autowired
     RedisUtil redisUtil;
-
+    @Autowired
+    HyggeConfig hyggeConfig;
 
 
     /**
@@ -70,7 +61,7 @@ public class CommonController {
         if (upload.isEmpty() || upload == null) {
             return Result.no("图片不为空");
         }
-        String url = ossUtil.upload(upload, address, fileName);
+        String url = ossUtil.upload(upload, hyggeConfig.getAddress(), fileName);
         if (StringUtils.isBlank(url)) {
             return Result.no("图片上传失败");
         }
@@ -92,7 +83,7 @@ public class CommonController {
         if (upload.isEmpty() || upload == null) {
             return Result.no("图片不为空");
         }
-        String url = ossUtil.upload(upload, address, "as");
+        String url = ossUtil.upload(upload, hyggeConfig.getAddress(), "as");
         if (StringUtils.isBlank(url)) {
             return Result.no("图片上传失败");
         }
@@ -128,7 +119,7 @@ public class CommonController {
         }
         //发送验证码，保存redis
         String flag = "博客H云验证码";
-        userService.sendEmailCode(email, flag, fromEmail);
+        userService.sendEmailCode(email, flag, hyggeConfig.getFromEmail());
 
         return Result.ok("发送成功");
     }

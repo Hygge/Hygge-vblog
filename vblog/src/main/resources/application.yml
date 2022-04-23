@@ -1,7 +1,7 @@
 spring:
   servlet:
     multipart:
-      max-file-size: 10MB
+      max-file-size: 100MB
       max-request-size: 100MB
   #邮件发送配置
   mail:
@@ -17,9 +17,9 @@ spring:
   #  数据源
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/myblog?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://:3306/myblog?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
-    password: 123456
+    password:
 
   redis:
     host: localhost
@@ -77,14 +77,6 @@ jwt:
   expire: 300000
   header: Authorization
 
-#图片保存位置
-img:
-  address: images
-  #必应壁纸
-  bing: https://cn.bing.com
-  api: https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN
-
-
 #阿里云oss对象存储
 oss:
   id:
@@ -93,5 +85,29 @@ oss:
   bucketName:
   bucket:
 
-#发送邮箱
-fromEmail:
+# 验证码图片位置
+aj:
+  captcha:
+    jigsaw: classpath:images/jigsaw
+    pic-click: classpath:images/pic-click
+    water-mark: Hygge
+
+hyg:
+  #图片保存位置
+  img:
+    address: images
+    #必应壁纸
+    bing: https://cn.bing.com
+    api: https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN
+    # 文件路径 示例（ Windows配置D:/ruoyi/uploadPath，Linux配置 /home/ruoyi/uploadPath）
+    profile: D:/upload
+
+  # ip地址查询api
+  catIp:
+    api: http://ip-api.com/json/
+    cn: ?lang=zh-CN
+
+  #发送邮箱
+  fromEmail:
+
+

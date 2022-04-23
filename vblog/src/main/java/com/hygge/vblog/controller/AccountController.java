@@ -3,6 +3,7 @@ package com.hygge.vblog.controller;
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.lang.Assert;
 import cn.hutool.crypto.SecureUtil;
+import cn.hutool.http.HttpUtil;
 import com.anji.captcha.model.common.ResponseModel;
 import com.anji.captcha.model.vo.CaptchaVO;
 import com.anji.captcha.service.CaptchaService;
@@ -16,7 +17,10 @@ import com.hygge.vblog.common.util.ImgUtil;
 import com.hygge.vblog.common.util.JwtUtil;
 import com.hygge.vblog.common.util.RedisUtil;
 import com.hygge.vblog.common.vo.UserVo;
+import com.hygge.vblog.config.HyggeConfig;
+import com.hygge.vblog.domain.VLogin;
 import com.hygge.vblog.domain.VUser;
+import com.hygge.vblog.service.VLoginService;
 import com.hygge.vblog.service.VUserService;
 import com.hygge.vblog.shiro.AccountProfile;
 import lombok.extern.slf4j.Slf4j;
@@ -30,6 +34,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -44,20 +49,20 @@ import java.util.List;
 public class AccountController {
 
     @Autowired
-    VUserService userService;
+    private VUserService userService;
     @Autowired
-    JwtUtil jwtUtil;
-    @Value("${jwt.header}")
-    private String header;
-
+    private JwtUtil jwtUtil;
     @Autowired
-    ImgUtil imgUtil;
+    private HyggeConfig hyggeConfig;
+    @Autowired
+    private ImgUtil imgUtil;
     //        文档链接  https://blog.csdn.net/weixin_43247803/article/details/113666136
     @Autowired
-    RedisUtil redisUtil;
-
+    private RedisUtil redisUtil;
     @Autowired
     private CaptchaService captchaService;
+    @Autowired
+    private VLoginService loginService;
 
 
     /**
@@ -87,13 +92,31 @@ public class AccountController {
             return Result.no("密码不正确");
         }
         String jwt = jwtUtil.createJWT(String.valueOf(user.getId()));
-        response.setHeader(header, jwt);
-        response.setHeader("Access-control-Expose-Headers", header);
+        response.setHeader(hyggeConfig.getHeader(), jwt);
+        response.setHeader("Access-control-Expose-Headers", hyggeConfig.getHeader());
         UserVo userVo = new UserVo();
         BeanUtil.copyProperties(user, userVo, "password", "createdDate");
         //插入登录记录
-
+        saveLogin(request, user);
         return Result.ok(userVo);
+    }
+
+    /**
+     * 保存登录记录
+     * @param request
+     * @param user
+     */
+    private void saveLogin(HttpServletRequest request, VUser user){
+        String ip = request.getRemoteHost();
+        String url = hyggeConfig.getIpApi() + ip + hyggeConfig.getCn();
+        String s = HttpUtil.get(url);
+        log.info(">>>>>>>>>>正在查询登录地址>>>>>>>>>>");
+        VLogin login = new VLogin();
+        login.setIp(ip);
+        login.setEmail(user.getEmail());
+        login.setCreateDate(new Date());
+        login.setAddress(s);
+        loginService.newSave(login);
     }
 
     /**
@@ -124,7 +147,6 @@ public class AccountController {
             throw new HyggeException(424, "你已经注册过了");
         }
 
-
         return Result.ok(200, "注册成功");
     }
 
@@ -140,6 +162,7 @@ public class AccountController {
      * @param userVo
      * @return
      */
+    @OtherLog(logName = "修改个人信息")
     @RequiresAuthentication
     @PostMapping("/upUserInfo")
     public Result upUserInfo(@RequestBody UserVo userVo) {
