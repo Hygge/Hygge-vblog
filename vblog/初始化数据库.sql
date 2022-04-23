@@ -216,3 +216,9 @@ CREATE TABLE `v_user`  (
 -- ----------------------------
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+ALTER TABLE `myblog`.`v_login`
+    MODIFY COLUMN `id` int(11) NOT NULL AUTO_INCREMENT FIRST;
+ALTER TABLE `myblog`.`v_file_record`
+    ADD COLUMN `size` bigint NULL COMMENT '大小kb' AFTER `local_or_cloud`,
+ADD COLUMN `create_date` datetime NULL COMMENT '创建时间' AFTER `size`;

@@ -1,6 +1,8 @@
 package com.hygge.vblog.controller;
 
 import com.hygge.vblog.common.emu.Constants;
+import com.hygge.vblog.common.emu.HygType;
+import com.hygge.vblog.common.exception.HyggeException;
 import com.hygge.vblog.common.result.Result;
 import com.hygge.vblog.common.util.ImgUtil;
 import com.hygge.vblog.common.util.JwtUtil;
@@ -57,6 +59,7 @@ public class CommonController {
     /**
      * 通用上传请求（单个）
      */
+    @RequiresAuthentication
     @PostMapping("/upload")
     public Result uploadFile(MultipartFile file) throws IOException {
             // 上传文件路径
@@ -103,13 +106,16 @@ public class CommonController {
     @PostMapping("/upImg")
     public Result upImg(MultipartFile upload) {
         if (upload.isEmpty() || upload == null) {
-            return Result.no("图片不为空");
+            throw new HyggeException(500,"图片不为空");
         }
-        String url = ossUtil.upload(upload, hyggeConfig.getAddress(), "as");
+        String url = ossUtil.upload(upload, hyggeConfig.getAddress(), "hyg");
         if (StringUtils.isBlank(url)) {
-            return Result.no("图片上传失败");
+            throw new HyggeException(424,"图片上传失败");
         }
         log.info("上传一个图片：{}", upload.getName());
+        Map<String, String> map = FileUploadUtil.extractFilename(upload, HygType.CLOUD.type());
+        map.put(Constants.PATH_FILE_NAME.getKey(), url);
+        fileRecordService.save(map);
         return Result.ok(url);
     }
 

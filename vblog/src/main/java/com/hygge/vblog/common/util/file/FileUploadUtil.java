@@ -55,14 +55,13 @@ public class FileUploadUtil {
 
         assertAllowed(file);
 
-        Map<String, String> map = extractFilename(file);
+        Map<String, String> map = extractFilename(file, HygType.LOCAL.type());
         String fileFullName =  map.get(Constants.NEW_FILE_NAME.getKey());
         //
         String absPath = getAbsoluteFile(baseDir, fileFullName).getAbsolutePath();
         file.transferTo(Paths.get(absPath));
         String pathFileName = getPathFileName(baseDir, fileFullName);
         map.put(Constants.PATH_FILE_NAME.getKey(), pathFileName);
-        map.put(Constants.LOCAL_OR_CLOUD.getKey(), String.valueOf(HygType.LOCAL.type()));
         return map;
     }
     /**
@@ -81,7 +80,7 @@ public class FileUploadUtil {
     /**
      * 返回文件名路径等
      */
-    public static Map<String, String> extractFilename(MultipartFile file) {
+    public static Map<String, String> extractFilename(MultipartFile file, Integer integer) {
         String originalFilename = file.getOriginalFilename();
         String suffix = originalFilename.substring(originalFilename.lastIndexOf("."));
         String name = originalFilename.substring(0, originalFilename.lastIndexOf("."));
@@ -91,8 +90,11 @@ public class FileUploadUtil {
         Map<String, String> hashMap = new HashMap<>();
         hashMap.put(Constants.SUFFIX.getKey(), suffix);
         hashMap.put(Constants.FILE_NAME.getKey(), name);
-        hashMap.put(Constants.NEW_FILE_NAME.getKey(), newFileName);
+        hashMap.put(Constants.LOCAL_OR_CLOUD.getKey(), String.valueOf(integer));
         hashMap.put(Constants.TYPE.getKey(), String.valueOf(type));
+        if (integer.equals(HygType.LOCAL.type())){
+            hashMap.put(Constants.NEW_FILE_NAME.getKey(), newFileName);
+        }
         return hashMap;
     }
 

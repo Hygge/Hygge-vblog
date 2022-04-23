@@ -8,6 +8,7 @@ import com.hygge.vblog.service.VFileRecordService;
 import com.hygge.vblog.mapper.VFileRecordMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.Map;
 
 /**
@@ -28,6 +29,7 @@ public class VFileRecordServiceImpl extends ServiceImpl<VFileRecordMapper, VFile
         fileRecord.setType(Integer.valueOf(map.get(Constants.TYPE.getKey())));
         fileRecord.setPath(map.get(Constants.PROFILE.getKey()));
         fileRecord.setLocalOrCloud(Integer.valueOf(map.get(Constants.LOCAL_OR_CLOUD.getKey())));
+        fileRecord.setCreateDate(new Date());
         save(fileRecord);
     }
 }

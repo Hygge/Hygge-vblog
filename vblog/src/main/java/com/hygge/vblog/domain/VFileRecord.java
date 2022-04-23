@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
+import java.util.Date;
+
 import lombok.Data;
 
 /**
@@ -50,6 +52,16 @@ public class VFileRecord implements Serializable {
      */
     private Integer localOrCloud;
 
+    /**
+     * 文件大小
+     */
+    private Long size;
+
+    /**
+     * 创建时间
+     */
+    private Date createDate;
+
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 
@@ -71,7 +83,9 @@ public class VFileRecord implements Serializable {
             && (this.getFileUrl() == null ? other.getFileUrl() == null : this.getFileUrl().equals(other.getFileUrl()))
             && (this.getType() == null ? other.getType() == null : this.getType().equals(other.getType()))
             && (this.getFileSuffixName() == null ? other.getFileSuffixName() == null : this.getFileSuffixName().equals(other.getFileSuffixName()))
-            && (this.getLocalOrCloud() == null ? other.getLocalOrCloud() == null : this.getLocalOrCloud().equals(other.getLocalOrCloud()));
+            && (this.getLocalOrCloud() == null ? other.getLocalOrCloud() == null : this.getLocalOrCloud().equals(other.getLocalOrCloud()))
+            && (this.getSize() == null ? other.getSize() == null : this.getSize().equals(other.getSize()))
+            && (this.getCreateDate() == null ? other.getCreateDate() == null : this.getCreateDate().equals(other.getCreateDate()));
     }
 
     @Override
@@ -85,6 +99,7 @@ public class VFileRecord implements Serializable {
         result = prime * result + ((getType() == null) ? 0 : getType().hashCode());
         result = prime * result + ((getFileSuffixName() == null) ? 0 : getFileSuffixName().hashCode());
         result = prime * result + ((getLocalOrCloud() == null) ? 0 : getLocalOrCloud().hashCode());
+        result = prime * result + ((getSize() == null) ? 0 : getSize().hashCode());
         return result;
     }
 
@@ -101,6 +116,8 @@ public class VFileRecord implements Serializable {
         sb.append(", type=").append(type);
         sb.append(", fileSuffixName=").append(fileSuffixName);
         sb.append(", localOrCloud=").append(localOrCloud);
+        sb.append(", size=").append(size);
+        sb.append(", createDate=").append(createDate);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

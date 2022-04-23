@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hygge.vblog.mapper.VFileRecordMapper">
+
+    <resultMap id="BaseResultMap" type="com.hygge.vblog.domain.VFileRecord">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="fileName" column="file_name" jdbcType="VARCHAR"/>
+            <result property="path" column="path" jdbcType="VARCHAR"/>
+            <result property="fileUrl" column="file_url" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="TINYINT"/>
+            <result property="fileSuffixName" column="file_suffix_name" jdbcType="VARCHAR"/>
+            <result property="localOrCloud" column="local_or_cloud" jdbcType="TINYINT"/>
+            <result property="size" column="size" jdbcType="BIGINT"/>
+            <result property="createDate" column="create_date" jdbcType="DATE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,file_name,path,
+        file_url,type,file_suffix_name,
+        local_or_cloud,size,create_date
+    </sql>
+</mapper>
