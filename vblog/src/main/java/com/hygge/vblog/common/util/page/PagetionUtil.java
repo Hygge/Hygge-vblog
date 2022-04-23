@@ -1,4 +1,4 @@
-package com.hygge.vblog.common.util;
+package com.hygge.vblog.common.util.page;
 
 import lombok.Data;
 

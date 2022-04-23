@@ -4,8 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hygge.vblog.common.dto.BlogsDto;
 import com.hygge.vblog.common.dto.PageDto;
-import com.hygge.vblog.common.util.PagetionUtil;
-import com.hygge.vblog.common.util.RedisUtil;
+import com.hygge.vblog.common.util.page.PagetionUtil;
 import com.hygge.vblog.domain.VArticle;
 import com.hygge.vblog.domain.VComment;
 import com.hygge.vblog.service.VArticleService;
@@ -18,7 +17,6 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  *
