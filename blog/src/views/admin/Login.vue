@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <div class="login-title">
-      <h5>登录 | <a href="#/register">注册</a></h5>
+      <h5>登录 <span v-if="showRegister">| <a href="#/register" >注册</a></span></h5>
     </div>
     <br/>
     <el-form :model="loginForm" :rules="rules" status-icon :ref="loginForm" label-width="100px" class="demo-ruleForm">
@@ -41,6 +41,7 @@ export default {
         password: '',
         captchaVerification: '',
       },
+      showRegister: false,
       rules: {
         userName: [
           {required: true, message: '请输入用户名或邮箱', trigger: 'blur'},

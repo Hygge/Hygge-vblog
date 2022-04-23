@@ -80,7 +80,7 @@ export default {
       total:0,
       pageSize: 5,
       current: 1,
-      show: true,
+      show: false,
 
 
     }
@@ -101,8 +101,8 @@ export default {
         console.log(res.data.data)
         _this.blogs = res.data.data.data
         _this.total = res.data.data.count
-        if (_this.total === 0){
-          _this.show = false
+        if (_this.total > 0){
+          _this.show = true
         }
       })
 
