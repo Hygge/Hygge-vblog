@@ -2,12 +2,15 @@ package com.hygge.vblog.controller;
 
 import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.hygge.vblog.common.annotation.OtherLog;
 import com.hygge.vblog.common.dto.BlogsDto;
 import com.hygge.vblog.common.dto.PageDto;
 import com.hygge.vblog.common.result.Result;
+import com.hygge.vblog.common.util.ImgUtil;
 import com.hygge.vblog.common.util.PagetionUtil;
 import com.hygge.vblog.common.util.RedisUtil;
 import com.hygge.vblog.common.vo.ArticleVo;
+import com.hygge.vblog.common.vo.UserVo;
 import com.hygge.vblog.domain.*;
 import com.hygge.vblog.service.*;
 import lombok.extern.slf4j.Slf4j;
@@ -42,6 +45,9 @@ public class IndexController {
     RedisUtil redisUtil;
     @Autowired
     VUserService userService;
+    @Autowired
+    ImgUtil imgUtil;
+    //        文档链接  https://blog.csdn.net/weixin_43247803/article/details/113666136
 
 
     /**
@@ -74,6 +80,7 @@ public class IndexController {
      * 获取所有标签
      * @return
      */
+    @OtherLog(logName = "获取所有的标签")
     @GetMapping("/getAllTag")
     public Result getAllTag(){
         List<VTag> tags = tagService.getBaseMapper().selectList(new QueryWrapper<VTag>().orderByDesc("id"));
@@ -88,6 +95,22 @@ public class IndexController {
     public Result getAllCategorys(){
         List<VCategorys> categorys = categorysService.getBaseMapper().selectList(new QueryWrapper<VCategorys>().orderByDesc("id"));
         return Result.ok(categorys);
+    }
+
+    /**
+     * 首页获取个人信息
+     *
+     * @return
+     */
+    @GetMapping("/userInfo")
+    public Result getUserInfo() {
+        List<VUser> users = userService.getBaseMapper().selectList(new QueryWrapper<VUser>().orderByAsc("created_date"));
+        VUser user = users.get(0);
+        String url = imgUtil.getWallpaper();
+        UserVo userVo = new UserVo();
+        BeanUtil.copyProperties(user, userVo, "password", "createdDate");
+        userVo.setCoverImgUrl(url);
+        return Result.ok(userVo);
     }
 
     /**
