@@ -18,13 +18,11 @@ import org.springframework.transaction.annotation.Transactional;
 public class VLoginServiceImpl extends ServiceImpl<VLoginMapper, VLogin>
     implements VLoginService{
 
-    @Autowired
-    private VLoginMapper loginMapper;
 
     @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
     @Override
     public void newSave(VLogin login) {
-        loginMapper.insert(login);
+        save(login);
     }
 }
 

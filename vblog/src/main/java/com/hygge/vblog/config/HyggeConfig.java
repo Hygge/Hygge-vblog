@@ -38,5 +38,8 @@ public class HyggeConfig {
     @Value("${hyg.img.api}")
     private String bingApi;
 
+    @Value("${hyg.img.profile}")
+    private String profile;
+
 
 }

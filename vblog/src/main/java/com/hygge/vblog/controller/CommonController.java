@@ -1,11 +1,14 @@
 package com.hygge.vblog.controller;
 
+import com.hygge.vblog.common.emu.Constants;
 import com.hygge.vblog.common.result.Result;
 import com.hygge.vblog.common.util.ImgUtil;
 import com.hygge.vblog.common.util.JwtUtil;
 import com.hygge.vblog.common.util.OSSUtil;
 import com.hygge.vblog.common.util.RedisUtil;
+import com.hygge.vblog.common.util.file.FileUploadUtil;
 import com.hygge.vblog.config.HyggeConfig;
+import com.hygge.vblog.service.VFileRecordService;
 import com.hygge.vblog.service.VUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -19,6 +22,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -46,6 +50,24 @@ public class CommonController {
     RedisUtil redisUtil;
     @Autowired
     HyggeConfig hyggeConfig;
+    @Autowired
+    VFileRecordService fileRecordService;
+
+
+    /**
+     * 通用上传请求（单个）
+     */
+    @PostMapping("/upload")
+    public Result uploadFile(MultipartFile file) throws IOException {
+            // 上传文件路径
+            String filePath = hyggeConfig.getProfile();
+            // 上传并返回新文件名称
+            Map<String, String> map = FileUploadUtil.upload(filePath, file);
+            map.put(Constants.PROFILE.getKey(), filePath);
+            // 保存数据库
+            fileRecordService.save(map);
+            return Result.ok(map.get(Constants.PATH_FILE_NAME.getKey()));
+    }
 
 
     /**
