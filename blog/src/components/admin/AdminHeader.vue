@@ -40,7 +40,7 @@
     </span>
     <el-divider direction="vertical"></el-divider>
     <span>
-      <el-link type="success" href="#/admin/userInfo" :underline="false">图片管理</el-link>
+      <el-link type="success" href="#/admin/Annex" :underline="false">图片管理</el-link>
     </span>
   </div>
 </template>

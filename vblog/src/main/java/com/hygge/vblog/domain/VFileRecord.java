@@ -62,6 +62,11 @@ public class VFileRecord implements Serializable {
      */
     private Date createDate;
 
+    /**
+     * 是否删除 0正常 1删除
+     */
+    private Integer del = 0;
+
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 

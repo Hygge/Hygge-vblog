@@ -1,5 +1,6 @@
 package com.hygge.vblog.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hygge.vblog.common.dto.BlogsDto;
@@ -39,7 +40,7 @@ public class VArticleServiceImpl extends ServiceImpl<VArticleMapper, VArticle>
      */
     @Transactional
     public List<BlogsDto> getAllPage(PageDto pageDto){
-        Integer current = (pageDto.getCurrent() - 1) * pageDto.getPageSize();
+        Long current = (pageDto.getCurrent() - 1) * pageDto.getPageSize();
         if (pageDto.getFlag() != null){
             return vArticleMapper.selectAllFlag(current, pageDto.getPageSize(), pageDto.getFlag());
         }else {
@@ -55,17 +56,17 @@ public class VArticleServiceImpl extends ServiceImpl<VArticleMapper, VArticle>
         //根据文章id查出所有标签并封装, 和统计评论数量封装
         blogsDtoList.forEach( blogsDto -> {
             blogsDto.setTag(tagService.getTagNameByArticleId(blogsDto.getId()));
-            int content = (int) commentService.count(new QueryWrapper<VComment>().eq("article_id", blogsDto.getId()));
+            int content = (int) commentService.count(new LambdaQueryWrapper<VComment>().eq(VComment::getArticleId, blogsDto.getId()));
             blogsDto.setContent(content);
         });
-        Integer count = 0;
+        Long count = 0L;
         if ( pageDto.getFlag() == null){
-            count = (int)count();
+            count = count();
         }else {
-            count = (int)count(new QueryWrapper<VArticle>().eq("status", pageDto.getFlag()));
+            count = count(new LambdaQueryWrapper<VArticle>().eq(VArticle::getStatus, pageDto.getFlag()));
         }
 
-        Integer pages =(count + pageDto.getPageSize() - 1) / pageDto.getPageSize();
+        Long pages =(count + pageDto.getPageSize() - 1) / pageDto.getPageSize();
         data.setData(blogsDtoList);
         data.setPages(pages);
         data.setCount(count);

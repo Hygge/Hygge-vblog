@@ -14,11 +14,11 @@ public class PageDto {
     /**
      * 默认当前分页1
      */
-    private Integer current;
+    private Long current;
     /**
      * 默认当前页面数据大小5
      */
-    private Integer pageSize;
+    private Long pageSize;
 
     /**
      *  1已发布 0回收站

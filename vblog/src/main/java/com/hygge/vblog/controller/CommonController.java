@@ -1,5 +1,9 @@
 package com.hygge.vblog.controller;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.hygge.vblog.common.annotation.OtherLog;
+import com.hygge.vblog.common.dto.ImgDTO;
 import com.hygge.vblog.common.emu.Constants;
 import com.hygge.vblog.common.emu.HygType;
 import com.hygge.vblog.common.exception.HyggeException;
@@ -9,7 +13,10 @@ import com.hygge.vblog.common.util.JwtUtil;
 import com.hygge.vblog.common.util.OSSUtil;
 import com.hygge.vblog.common.util.RedisUtil;
 import com.hygge.vblog.common.util.file.FileUploadUtil;
+import com.hygge.vblog.common.util.page.PagetionUtil;
+import com.hygge.vblog.common.vo.ImgFileVo;
 import com.hygge.vblog.config.HyggeConfig;
+import com.hygge.vblog.domain.VFileRecord;
 import com.hygge.vblog.service.VFileRecordService;
 import com.hygge.vblog.service.VUserService;
 import lombok.extern.slf4j.Slf4j;
@@ -18,12 +25,15 @@ import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -56,9 +66,23 @@ public class CommonController {
     VFileRecordService fileRecordService;
 
 
+
+    @RequiresAuthentication
+    @PostMapping("/listImg")
+    public Result listImg(@RequestBody ImgDTO imgDTO){
+
+        IPage<VFileRecord> allImg = fileRecordService.getAllImg(imgDTO);
+
+        ImgFileVo fileVo = new ImgFileVo();
+        fileVo.setFileRecords(allImg);
+        fileVo.setFileTypes(fileRecordService.getSuffixList());
+        return Result.ok(fileVo);
+    }
+
     /**
      * 通用上传请求（单个）
      */
+    @OtherLog(logName = "上传一个文件")
     @RequiresAuthentication
     @PostMapping("/upload")
     public Result uploadFile(MultipartFile file) throws IOException {
@@ -66,10 +90,42 @@ public class CommonController {
             String filePath = hyggeConfig.getProfile();
             // 上传并返回新文件名称
             Map<String, String> map = FileUploadUtil.upload(filePath, file);
+            map.put("size", String.valueOf(file.getSize()));
             map.put(Constants.PROFILE.getKey(), filePath);
             // 保存数据库
             fileRecordService.save(map);
             return Result.ok(map.get(Constants.PATH_FILE_NAME.getKey()));
+    }
+    /**
+     * 通用上传请求（多个）
+     */
+    @OtherLog(logName = "批量上传文件")
+    @RequiresAuthentication
+    @PostMapping("/uploadList")
+    public Result uploadFiles(List<MultipartFile> files) {
+        if (files == null || files.isEmpty()){
+            return Result.ok();
+        }
+        // 上传文件路径
+        String filePath = hyggeConfig.getProfile();
+        List<String> urls = new ArrayList<>();
+        files.forEach( file -> {
+            // 上传并返回新文件名称
+            Map<String, String> map = null;
+            try {
+                map = FileUploadUtil.upload(filePath, file);
+            } catch (IOException e) {
+                e.printStackTrace();
+                log.error("文件上传失败："+ file.getOriginalFilename());
+            }
+            map.put("size", String.valueOf(file.getSize()));
+            map.put(Constants.PROFILE.getKey(), filePath);
+            // 保存数据库
+            fileRecordService.save(map);
+            urls.add(map.get(Constants.PATH_FILE_NAME.getKey()));
+        });
+
+        return Result.ok(urls);
     }
 
 

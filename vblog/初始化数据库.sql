@@ -222,3 +222,5 @@ ALTER TABLE `myblog`.`v_login`
 ALTER TABLE `myblog`.`v_file_record`
     ADD COLUMN `size` bigint NULL COMMENT '大小kb' AFTER `local_or_cloud`,
 ADD COLUMN `create_date` datetime NULL COMMENT '创建时间' AFTER `size`;
+ALTER TABLE `myblog`.`v_file_record`
+    ADD COLUMN `del` int NULL COMMENT '是否删除 默认 0正常 1删除' AFTER `create_date`;

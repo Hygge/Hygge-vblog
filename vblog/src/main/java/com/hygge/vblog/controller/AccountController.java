@@ -10,7 +10,7 @@ import com.anji.captcha.service.CaptchaService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.hygge.vblog.common.annotation.OtherLog;
 import com.hygge.vblog.common.dto.LoginDto;
-import com.hygge.vblog.common.dto.RegisterBTO;
+import com.hygge.vblog.common.dto.RegisterDTO;
 import com.hygge.vblog.common.exception.HyggeException;
 import com.hygge.vblog.common.result.Result;
 import com.hygge.vblog.common.util.ImgUtil;
@@ -27,7 +27,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -135,12 +134,12 @@ public class AccountController {
     /**
      * 首次注册博客账号
      *
-     * @param registerBTO
+     * @param registerDTO
      * @return
      */
     @OtherLog(logName = "注册账号")
     @PostMapping("/register")
-    public Result Register(@RequestBody RegisterBTO registerBTO) {
+    public Result Register(@RequestBody RegisterDTO registerDTO) {
         // 检查数据库有没有user，有代表注册过了，不能注册了
         List<VUser> list = userService.list();
         if (list.size() > 0){

@@ -17,6 +17,7 @@ import UserInfo from "@/views/admin/UserInfo";
 import AdCategory from "@/views/admin/AdCategory";
 import AdHuisouzan from "@/views/admin/AdHuisouzan";
 import AdContent from "@/views/admin/AdContent";
+import Annex from "../views/admin/Annex";
 
 
 Vue.use(Router)
@@ -146,6 +147,14 @@ export default new Router({
             path:'/admin/AdContent',
             name:'AdContent',
             component: AdContent,
+            meta:{
+                requiresAuth: true
+            }
+        },
+        {
+            path:'/admin/Annex',
+            name:'Annex',
+            component: Annex,
             meta:{
                 requiresAuth: true
             }

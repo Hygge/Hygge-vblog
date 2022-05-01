@@ -86,9 +86,8 @@ public class FileUploadUtil {
         String name = originalFilename.substring(0, originalFilename.lastIndexOf("."));
         String date = DateUtils.dateTimeNow();
         String newFileName = DateUtils.datePath() + name + date + suffix;
-        Integer type = checkFileType(suffix);
         Map<String, String> hashMap = new HashMap<>();
-        hashMap.put(Constants.SUFFIX.getKey(), suffix);
+        Integer type = checkFileType(suffix, hashMap);
         hashMap.put(Constants.FILE_NAME.getKey(), name);
         hashMap.put(Constants.LOCAL_OR_CLOUD.getKey(), String.valueOf(integer));
         hashMap.put(Constants.TYPE.getKey(), String.valueOf(type));
@@ -128,9 +127,9 @@ public class FileUploadUtil {
      * @param suffix
      * @return
      */
-    public static Integer checkFileType(String suffix){
+    public static Integer checkFileType(String suffix, Map<String, String> map){
         String newSuffix = suffix.substring(1);
-
+        map.put(Constants.SUFFIX.getKey(), newSuffix);
         for (String s : MimeTypeUtils.IMG_TYPE) {
             if (newSuffix.equals(s)){
                 return HygType.IMG_TYPE.type();

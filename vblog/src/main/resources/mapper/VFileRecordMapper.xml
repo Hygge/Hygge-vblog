@@ -21,4 +21,47 @@
         file_url,type,file_suffix_name,
         local_or_cloud,size,create_date
     </sql>
+
+    <select id="selectAllList" resultType="com.hygge.vblog.common.dto.ImgDTO">
+        SELECT id, file_name, path, file_url, type, size FROM v_file_record
+        <where>
+            del = 0
+            <if test="file.id != null">
+                and id = #{file.id}
+            </if>
+            <if test="file.fileName != null">
+                and file_name LIKE CONCAT('%', #{file.fileName},'%')
+            </if>
+            <if test="file.localOrCloud != null">
+                and local_or_cloud = #{file.localOrCloud}
+            </if>
+            <if test="file.fileSuffixName != null">
+                and file_suffix_name=#{file.fileSuffixName}
+            </if>
+        </where>
+        order by create_date desc
+        limit #{current},#{size}
+    </select>
+    <select id="countAllList" resultType="java.lang.Integer"
+            parameterType="com.hygge.vblog.common.dto.ImgDTO">
+        SELECT count(*) FROM v_file_record
+        <where>
+            del = 0
+            <if test="file.id != null">
+                and id = #{file.id}
+            </if>
+            <if test="file.fileName != null">
+                and file_name LIKE CONCAT('%', #{file.fileName},'%')
+            </if>
+            <if test="file.localOrCloud != null">
+                and local_or_cloud = #{file.localOrCloud}
+            </if>
+            <if test="file.fileSuffixName != null">
+                and file_suffix_name=#{file.fileSuffixName}
+            </if>
+        </where>
+    </select>
+    <select id="selectSuffixName" resultType="java.lang.String">
+        SELECT DISTINCT file_suffix_name FROM v_file_record;
+    </select>
 </mapper>

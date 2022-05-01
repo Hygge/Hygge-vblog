@@ -12,7 +12,7 @@ import java.io.Serializable;
  * @description TODO    注册数据封装
  */
 @Data
-public class RegisterBTO implements Serializable {
+public class RegisterDTO implements Serializable {
 
     /**
      * 用户名

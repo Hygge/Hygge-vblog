@@ -135,7 +135,7 @@ export default {
         },
         methods: 'post'
       }
-      this.$http.post("/upImg",formData,config).then(res=>{
+      this.$http.post("/upload",formData,config).then(res=>{
         this.user1.avator = ''
         this.user1.avator = res.data.data
         this.photo = 1

@@ -1,8 +1,12 @@
 package com.hygge.vblog.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.hygge.vblog.common.dto.ImgDTO;
 import com.hygge.vblog.domain.VFileRecord;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -17,5 +21,18 @@ public interface VFileRecordService extends IService<VFileRecord> {
      * @param map
      */
     void save(Map<String, String> map);
+
+    /**
+     * 分页获取文件
+     * @param imgDTO
+     * @return
+     */
+    IPage<VFileRecord> getAllImg(ImgDTO imgDTO);
+
+    /**
+     * 获取所有文件后缀
+     * @return
+     */
+    List<String> getSuffixList();
 
 }

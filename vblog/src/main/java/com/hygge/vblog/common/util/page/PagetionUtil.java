@@ -19,16 +19,16 @@ public class PagetionUtil<T> {
     /**
      * 总计
      */
-    private Integer count;
+    private Long count;
     /**
      * 分页数量
      */
-    private Integer pages;
+    private Long pages;
 
     public PagetionUtil() {
     }
 
-    public PagetionUtil(T data, Integer count, Integer pages) {
+    public PagetionUtil(T data, Long count, Long pages) {
         this.data = data;
         this.count = count;
         this.pages = pages;
