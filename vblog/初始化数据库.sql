@@ -224,3 +224,7 @@ ALTER TABLE `myblog`.`v_file_record`
 ADD COLUMN `create_date` datetime NULL COMMENT '创建时间' AFTER `size`;
 ALTER TABLE `myblog`.`v_file_record`
     ADD COLUMN `del` int NULL COMMENT '是否删除 默认 0正常 1删除' AFTER `create_date`;
+
+INSERT INTO `myblog`.`v_user` (`id`, `user_name`, `password`, `email`, `avator`, `qq`, `created_date`, `icp`, `signature`, `count`) VALUES (1, 'hygge', 'e10adc3949ba59abbe56e057f20f883e', '3163367790@qq.com', 'http://corehome0.oss-cn-hongkong.aliyuncs.com/images/hyg2022-04-23T18%3A28%3A32.972-0fa22969-63a5-4ca1.png?Expires=1652537101&OSSAccessKeyId=LTAI4G3jsiM4zfyA3geoN3eX&Signature=FByuRXLHPy1gUn0sm55BxSPZegs%3D', '', '2022-02-05 20:39:07', '', '你好啊！！！', 9);
+
+
