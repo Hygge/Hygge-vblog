@@ -138,7 +138,7 @@ public class CommonController {
      */
     @RequiresAuthentication
     @PostMapping("/uploadImage")
-    public Result uploadImage(@RequestParam(name = "multipartFile") MultipartFile upload, @RequestParam(name = "fileName") String fileName) throws IOException {
+    public Result uploadImage(@RequestParam(name = "multipartFile") MultipartFile upload, @RequestParam(name = "fileName") String fileName){
         if (upload.isEmpty() || upload == null) {
             return Result.no("图片不为空");
         }
