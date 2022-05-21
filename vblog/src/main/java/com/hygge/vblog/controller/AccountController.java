@@ -11,6 +11,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.hygge.vblog.common.annotation.OtherLog;
 import com.hygge.vblog.common.dto.LoginDto;
 import com.hygge.vblog.common.dto.RegisterDTO;
+import com.hygge.vblog.common.emu.Constants;
 import com.hygge.vblog.common.exception.HyggeException;
 import com.hygge.vblog.common.result.Result;
 import com.hygge.vblog.common.util.ImgUtil;
@@ -24,6 +25,7 @@ import com.hygge.vblog.service.VLoginService;
 import com.hygge.vblog.service.VUserService;
 import com.hygge.vblog.shiro.AccountProfile;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -145,7 +147,11 @@ public class AccountController {
         if (list.size() > 0){
             throw new HyggeException(424, "你已经注册过了");
         }
-
+        VUser user = new VUser();
+        user.setUserName(registerDTO.getUserName());
+        user.setEmail(registerDTO.getEmail());
+        user.setPassword(registerDTO.getPassword());
+        user.setAvator("https://pic4.zhimg.com/v2-8195dfd64bea7800b33c47b943509ed7_r.jpg");
         return Result.ok(200, "注册成功");
     }
 
@@ -172,6 +178,25 @@ public class AccountController {
         byId.setId(id);
         userService.updateById(byId);
         return Result.ok(userVo);
+    }
+
+    /**
+     * 重置密码
+     * @return
+     */
+    @PostMapping("/resetPassword")
+    public Result resetPasword(String code, String password){
+        if (StringUtils.isBlank(code) || StringUtils.isBlank(password)){
+            throw new HyggeException(424, "验证码或密码不能为空");
+        }
+        VUser byId = userService.getById(1L);
+        String code1 = (String) redisUtil.get(Constants.EMAIL.getKey() + byId.getEmail());
+        if (!code1.equals(code)){
+            throw new HyggeException(424, "验证码错误");
+        }
+        byId.setPassword(password);
+        userService.updateById(byId);
+        return Result.ok("修改成功");
     }
 
 }

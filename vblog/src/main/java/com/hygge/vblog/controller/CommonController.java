@@ -17,6 +17,7 @@ import com.hygge.vblog.common.util.page.PagetionUtil;
 import com.hygge.vblog.common.vo.ImgFileVo;
 import com.hygge.vblog.config.HyggeConfig;
 import com.hygge.vblog.domain.VFileRecord;
+import com.hygge.vblog.domain.VUser;
 import com.hygge.vblog.service.VFileRecordService;
 import com.hygge.vblog.service.VUserService;
 import lombok.extern.slf4j.Slf4j;
@@ -199,6 +200,31 @@ public class CommonController {
             redisUtil.expire(redisKey, 24 * 60 * 60 * 1000L);
         }
         if (i > 4) {
+            throw new HyggeException(424, "今日验证码次数已用尽");
+        }
+        //发送验证码，保存redis
+        String flag = "博客H云验证码";
+        userService.sendEmailCode(email, flag, hyggeConfig.getFromEmail());
+
+        return Result.ok("发送成功");
+    }
+    /**
+     * 获取当前用户验证码
+     * @param request
+     * @return
+     */
+    @PostMapping("/getCodes")
+    public Result getCode(HttpServletRequest request) {
+        VUser byId = userService.getById(1L);
+        String email = byId.getEmail();
+        //限制ip次数，以防恶意获取，自增
+        String ip = request.getRemoteHost();
+        String redisKey = "ip:" + ip;
+        Long i = redisUtil.incr(redisKey, 1L);
+        if (i == null || i.equals(0)) {
+            redisUtil.expire(redisKey, 24 * 60 * 60 * 1000L);
+        }
+        if (i > 4) {
             return Result.no("今日验证码次数已用尽");
         }
         //发送验证码，保存redis
@@ -207,7 +233,6 @@ public class CommonController {
 
         return Result.ok("发送成功");
     }
-
 
 
 }

@@ -2,6 +2,7 @@ package com.hygge.vblog.service.impl;
 
 import cn.hutool.core.util.RandomUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.hygge.vblog.common.emu.Constants;
 import com.hygge.vblog.common.util.MailUtil;
 import com.hygge.vblog.common.util.RedisUtil;
 import com.hygge.vblog.domain.VUser;
@@ -28,7 +29,7 @@ public class VUserServiceImpl extends ServiceImpl<VUserMapper, VUser> implements
 
     @Override
     public void sendEmailCode(String email, String subject, String fromEamil) {
-        String redisKey = "email:" + email;
+        String redisKey = Constants.EMAIL.getKey() + email;
         String code = RandomUtil.randomString("0123456789qwertyuiopasdfghjklzxcvbnm", 6);
         try {
             mailUtil.sendSimpleMail(email, fromEamil, subject, code);
