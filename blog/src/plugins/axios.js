@@ -3,13 +3,52 @@ import Element from "element-ui"
 import store from "@/store/store"
 import router from "@/router/index"
 import baseUrl from '/src/baseUrl'
+import { Loading } from 'element-ui';
 
 axios.defaults.baseURL = baseUrl.BaseURL
+
+
+let loading = null //定义loading变量
+
+//开始 加载loading
+let startLoading=()=>{
+    loading = Loading.service({
+        lock: true,
+        text: 'loading……',
+        background: 'rgba(0, 0, 0, 0.7)'
+    })
+}
+//结束 取消loading加载
+let endLoading=()=>{
+    loading.close()
+}
+
+//showFullScreenLoading() 与 tryHideFullScreenLoading() 目的是合并同一页面多个请求触发loading
+
+let needLoadingRequestCount = 0 //声明一个变量
+
+let showFullScreenLoading=()=> {
+    if (needLoadingRequestCount === 0) { //当等于0时证明第一次请求 这时开启loading
+        startLoading()
+    }
+    needLoadingRequestCount++ //全局变量值++
+}
+
+let tryHideFullScreenLoading=()=> {
+    if (needLoadingRequestCount <= 0) return //小于等于0 证明没有开启loading 此时return
+    needLoadingRequestCount-- //正常响应后 全局变量 --
+    if (needLoadingRequestCount === 0) {  //等于0 时证明全部加载完毕 此时结束loading 加载
+        endLoading()
+    }
+}
+
 axios.interceptors.request.use(
     config => {
         if (store.state.token) {
             config.headers.Authorization = `${store.state.token}`
         }
+        //开启loading加载
+        showFullScreenLoading()
         //console.log("前置拦截")
         // 可以统一设置请求头
         // config = {
@@ -27,9 +66,10 @@ axios.interceptors.request.use(
 )
 
 axios.interceptors.response.use(response => {
+        //关闭loading加载
+        tryHideFullScreenLoading()
         const res = response.data;
         console.log("后置拦截")
-        console.log(res.repCode)
         // 当结果的code是否为200的情况
         if (res.code === 200 || res.code === 404 || res.repCode === '0000'
         || res.repCode === '0011'
