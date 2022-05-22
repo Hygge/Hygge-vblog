@@ -22,7 +22,7 @@
         local_or_cloud,size,create_date
     </sql>
 
-    <select id="selectAllList" resultType="com.hygge.vblog.common.dto.ImgDTO">
+    <select id="selectAllList" resultType="com.hygge.vblog.domain.VFileRecord">
         SELECT id, file_name, path, file_url, type, size FROM v_file_record
         <where>
             del = 0

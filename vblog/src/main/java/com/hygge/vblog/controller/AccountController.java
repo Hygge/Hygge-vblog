@@ -141,7 +141,7 @@ public class AccountController {
      */
     @OtherLog(logName = "注册账号")
     @PostMapping("/register")
-    public Result Register(@RequestBody RegisterDTO registerDTO) {
+    public Result Register(@RequestBody RegisterDTO registerDTO, HttpServletRequest request) {
         // 检查数据库有没有user，有代表注册过了，不能注册了
         List<VUser> list = userService.list();
         if (list.size() > 0){
@@ -150,8 +150,11 @@ public class AccountController {
         VUser user = new VUser();
         user.setUserName(registerDTO.getUserName());
         user.setEmail(registerDTO.getEmail());
-        user.setPassword(registerDTO.getPassword());
+        String password = SecureUtil.md5(registerDTO.getPassword());
+        user.setPassword(password);
         user.setAvator("https://pic4.zhimg.com/v2-8195dfd64bea7800b33c47b943509ed7_r.jpg");
+
+        saveLogin(request, user);
         return Result.ok(200, "注册成功");
     }
 
@@ -184,6 +187,7 @@ public class AccountController {
      * 重置密码
      * @return
      */
+    @OtherLog(logName = "重置密码")
     @PostMapping("/resetPassword")
     public Result resetPasword(String code, String password){
         if (StringUtils.isBlank(code) || StringUtils.isBlank(password)){
@@ -194,7 +198,8 @@ public class AccountController {
         if (!code1.equals(code)){
             throw new HyggeException(424, "验证码错误");
         }
-        byId.setPassword(password);
+        String s = SecureUtil.md5(password);
+        byId.setPassword(s);
         userService.updateById(byId);
         return Result.ok("修改成功");
     }

@@ -67,7 +67,11 @@ public class CommonController {
     VFileRecordService fileRecordService;
 
 
-
+    /**
+     * 获取所有图片
+     * @param imgDTO
+     * @return
+     */
     @RequiresAuthentication
     @PostMapping("/listImg")
     public Result listImg(@RequestBody ImgDTO imgDTO){

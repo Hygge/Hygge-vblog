@@ -1,7 +1,9 @@
 package com.hygge.vblog.controller;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.conditions.query.LambdaQueryChainWrapper;
 import com.hygge.vblog.common.annotation.OtherLog;
 import com.hygge.vblog.common.dto.PageDto;
 import com.hygge.vblog.common.result.Result;
@@ -17,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author: hygge
@@ -47,6 +50,17 @@ public class IndexController {
     ImgUtil imgUtil;
     //        文档链接  https://blog.csdn.net/weixin_43247803/article/details/113666136
 
+
+    /**
+     * 获取所有标题
+     * @return
+     */
+    @GetMapping("/getTitles")
+    public Result getTitle(){
+        List<VArticle> vArticles = articleService.getBaseMapper().selectList(new LambdaQueryWrapper<VArticle>().orderByDesc(VArticle::getId));
+        List<String> collect = vArticles.stream().map(VArticle::getTitle).collect(Collectors.toList());
+        return Result.ok(collect);
+    }
 
     /**
      * 保存评论
