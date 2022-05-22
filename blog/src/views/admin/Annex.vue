@@ -34,18 +34,59 @@
 
       </el-card>
       <br/>
+
       <div class="box-card" shadow="always">
           <div class="block" style="display: inline-block;margin-left: 10px;" v-for="(img, key) in imgs" :key="key">
-            <el-image :src="img.fileUrl"  class="img"
+            <el-checkbox v-model="checked" ></el-checkbox>
+<!--            <el-image :src="img.fileUrl"  class="img"
                       fit="scale-down"
-            ></el-image>
+            ></el-image>-->
+             <el-popover placement="right" title="" trigger="hover" width="500">
+              <img :src="baseUrl + img.fileUrl"  />
+              <img slot="reference" :src="baseUrl + img.fileUrl" :alt="baseUrl + img.fileUrl" style="width: 265px;height: 165px">
+            </el-popover>
             <br/>
-            <el-tooltip placement="top">
+            <el-tooltip  >
               <div slot="content">{{ img.fileName }}</div>
               <label class="demonstration">{{ img.fileName }}</label>
             </el-tooltip>
+            <br/>
           </div>
+<!--        <el-table
+            ref="multipleTable"
+            :data="tableData"
+            border
+            style="width: 100%"
+            >
+          <el-table-column
+              width="250"
+              align="center"
+              class="elc"
+          >-->
+<!--            v-for="(img, key) in imgs" :key="key"-->
+<!--            <el-popover placement="right" title="" trigger="hover" width="500">
+              <img :src="baseUrl + img.fileUrl" />
+              <img slot="reference" :src="baseUrl + img.fileUrl" :alt="baseUrl + img.fileUrl" >
+            </el-popover>
+            <br/>
+            <el-tooltip >
+              <div slot="content">{{ img.fileName }}</div>
+              <label class="demonstration">{{ img.fileName }}</label>
+            </el-tooltip>-->
+<!--            <template slot-scope="scope">
+              <el-popover placement="right" title="" trigger="hover" width="500">
+                <img :src="baseUrl + scope.row.fileUrl" />
+                <img slot="reference" :src="baseUrl + scope.row.fileUrl" :alt="baseUrl + scope.row.fileUrl" >
+              </el-popover>
+              <br/>
+              <el-tooltip >
+                <div slot="content">{{ scope.row.fileName }}</div>
+                <label class="demonstration">{{ scope.row.fileName }}</label>
+              </el-tooltip>
+            </template>
+          </el-table-column>
 
+        </el-table>-->
       </div>
     <br/>
     <!--          分页-->
@@ -86,6 +127,7 @@ export default {
       uploadDialogStatus: false,
       imgs: {},
       fileTypes:{},
+      baseUrl: this.$baseUrl.BaseURL,
     }
   },
   methods: {
@@ -113,6 +155,7 @@ export default {
         console.log(res.data.data)
         let fileRecords = res.data.data.fileRecords
         let fileTypes = res.data.data.fileTypes
+        _this.tableData = fileRecords.records
         _this.imgs = fileRecords.records
         _this.total = fileRecords.total
         _this.fileTypes = fileTypes
@@ -141,10 +184,6 @@ export default {
   margin: 0 auto;
   max-width: 1100px;
   height: 100%;
-}
-.img{
-  width: 200px;
-  height: 105px;
 }
 .demonstration{
   background-color: white;

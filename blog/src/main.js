@@ -12,12 +12,14 @@ import store from "@/store/store"
 import "./permission"
 import mavonEditor from 'mavon-editor'
 import 'mavon-editor/dist/css/index.css'
+import BaseURL from "./baseUrl"
 // import LmLoading from '/src/components/loading'
 // import { Loading } from 'element-ui';
 
 
 Vue.use(mavonEditor)
 Vue.prototype.$http = axios
+Vue.prototype.$baseUrl = BaseURL
 Vue.use(ElementUI)
 Vue.config.productionTip = false
 // Vue.use(LmLoading)

@@ -18,6 +18,7 @@ import AdCategory from "@/views/admin/AdCategory";
 import AdHuisouzan from "@/views/admin/AdHuisouzan";
 import AdContent from "@/views/admin/AdContent";
 import Annex from "../views/admin/Annex";
+import Titles from "../views/Titles";
 
 
 Vue.use(Router)
@@ -59,6 +60,12 @@ export default new Router({
             name: 'error',
             component: Error
         },
+        {
+            path: '/titles',
+            name: 'titles',
+            component: Titles
+        },
+
         {
             path: '/blogInfo/:blogId',
             name: 'BlogInfo',

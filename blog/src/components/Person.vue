@@ -3,7 +3,7 @@
     <el-card shadow="always">
       个人信息
       <hr/>
-      <el-avatar :size="100" :src=user.avator></el-avatar>
+      <el-avatar :size="100" :src="this.$baseUrl.BaseURL + user.avator"></el-avatar>
       <br/>
 
     </el-card>

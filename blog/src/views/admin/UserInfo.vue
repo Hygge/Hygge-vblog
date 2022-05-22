@@ -19,7 +19,7 @@
                      :before-remove="beforeRemove"
                      :on-change="uploadSectionFile"
                      >
-            <el-avatar :size="175" v-if="photo" :src=user1.avator></el-avatar>
+            <el-avatar :size="175" v-if="photo" :src="this.$baseUrl.BaseURL + user.avator"></el-avatar>
             <i v-else class="el-icon-plus avatar-uploader-icon"></i>
           </el-upload>
 
@@ -128,7 +128,7 @@ export default {
       // FormData 对象
       var formData = new FormData();
       // 文件对象
-      formData.append('upload', this.files);
+      formData.append('file', this.files);
       let config = {
         headers: {
           'Content-Type': 'multipart/form-data'

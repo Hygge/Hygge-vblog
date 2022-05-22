@@ -33,6 +33,9 @@
             <li class="nav-item">
               <a class="nav-link disabled" href="#/about">关于页面</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#/titles">所有标题</a>
+            </li>
           </ul>
 
           <div class="header-input">

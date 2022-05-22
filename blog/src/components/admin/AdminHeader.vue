@@ -3,7 +3,7 @@
     <h2>欢迎 {{ user.userName }}!!</h2>
     <div class="avatar">
       <router-link :to="{name: 'Index'}">
-        <el-avatar :size="150" :src=user.avator></el-avatar>
+        <el-avatar :size="150" :src= "this.$baseUrl.BaseURL + user.avator"></el-avatar>
       </router-link>
     </div>
     <hr/>
